@@ -1,0 +1,10 @@
+CLASSIFICATION REPORT ON TEST DATASET
+================================================================================
+              precision    recall  f1-score   support
+
+     Cat (0)     0.8635    0.8433    0.8533       300
+     Dog (1)     0.8469    0.8667    0.8567       300
+
+    accuracy                         0.8550       600
+   macro avg     0.8552    0.8550    0.8550       600
+weighted avg     0.8552    0.8550    0.8550       600
