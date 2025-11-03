@@ -26,7 +26,15 @@ requires-python = ">=3.12, <3.12.4"
 dependencies = [
     "datasets>=3.6.0",
     "foxglove>=0.1.10",
+    "ipykernel>=7.1.0",
+    "jupyter>=1.1.1",
+    "matplotlib>=3.10.7",
+    "numpy>=2.2.6",
+    "opencv-python>=4.12.0.88",
+    "scipy>=1.16.3",
+    "tensorflow>=2.20.0",
     "transformers>=4.53.0",
+    "ultralytics>=8.3.223",
 ]
 
 [project.urls]
@@ -56,6 +64,11 @@ dev-dependencies = [
     "ruff>=0.8.0",
     "mypy>=1.13.0",
     "pre-commit>=4.0.0",
+]
+
+[tool.uv.workspace]
+members = [
+    "assignments/assignment-3",
 ]
 
 [tool.hatch.build.targets.wheel]
