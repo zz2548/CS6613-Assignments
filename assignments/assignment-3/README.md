@@ -16,3 +16,7 @@ November 2, 2025
 └── README.md       # This file
 ```
 
+Additional Dependencies:
+```bash
+uv pip install ultralytics opencv-python numpy scipy matplotlib
+```
