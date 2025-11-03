@@ -20,3 +20,5 @@ Additional Dependencies:
 ```bash
 uv pip install ultralytics opencv-python numpy scipy matplotlib
 ```
+
+Acknowledgement: I acknowledge the use of Github Copilot as an AI assistant in debugging and formatting of this assignment. 
