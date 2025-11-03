@@ -11,9 +11,13 @@ November 2, 2025
 ## Instructions:
 
 ```         
-├── part1/          # Task 1
-├── part2/          # Task 2
-└── README.md       # This file
+├── part1/                      # Task 1
+├── part2/                      # Task 2
+├── DeepSORT_excalidraw.png     # Architecture diagram
+├── soccer.mpy                  # Input video
+├── output_tracked.mp4          # Output video with bounding boxes
+├── yolo11n.pt                  # YOLOv11 model
+└── README.md                   # This file
 ```
 
 Additional Dependencies:
