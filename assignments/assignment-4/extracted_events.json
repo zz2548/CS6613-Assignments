@@ -1,0 +1,1801 @@
+[
+  {
+    "timestamp": "0:50",
+    "timestamp_seconds": 50.379999999999995,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "And here's one of the fun matchups in this series Anthony Davis has to take a tough shot well defended by Dremond Green"
+  },
+  {
+    "timestamp": "0:50",
+    "timestamp_seconds": 50.379999999999995,
+    "player": "Anthony Davis",
+    "action": "Shooting",
+    "description": "And here's one of the fun matchups in this series Anthony Davis has to take a tough shot well defended by Dremond Green"
+  },
+  {
+    "timestamp": "0:50",
+    "timestamp_seconds": 50.379999999999995,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "And here's one of the fun matchups in this series Anthony Davis has to take a tough shot well defended by Dremond Green"
+  },
+  {
+    "timestamp": "0:50",
+    "timestamp_seconds": 50.379999999999995,
+    "player": "Dremond",
+    "action": "Shooting",
+    "description": "And here's one of the fun matchups in this series Anthony Davis has to take a tough shot well defended by Dremond Green"
+  },
+  {
+    "timestamp": "1:06",
+    "timestamp_seconds": 66.46,
+    "player": "Wiggins",
+    "action": "Scoring",
+    "description": "And as Andrew Wiggins gets inside and gets the bucket"
+  },
+  {
+    "timestamp": "1:06",
+    "timestamp_seconds": 66.46,
+    "player": "Andrew Wiggins",
+    "action": "Scoring",
+    "description": "And as Andrew Wiggins gets inside and gets the bucket"
+  },
+  {
+    "timestamp": "2:16",
+    "timestamp_seconds": 136.78,
+    "player": "Curry",
+    "action": "Scoring",
+    "description": "He didn't wait for step-curry to make a play waived everybody out of a way"
+  },
+  {
+    "timestamp": "3:20",
+    "timestamp_seconds": 200.7,
+    "player": "Curry",
+    "action": "Passing",
+    "description": "Curry throws the pass stolen by Anthony Davis and number one rated defensive team"
+  },
+  {
+    "timestamp": "3:20",
+    "timestamp_seconds": 200.7,
+    "player": "Davis",
+    "action": "Passing",
+    "description": "Curry throws the pass stolen by Anthony Davis and number one rated defensive team"
+  },
+  {
+    "timestamp": "3:20",
+    "timestamp_seconds": 200.7,
+    "player": "Anthony Davis",
+    "action": "Passing",
+    "description": "Curry throws the pass stolen by Anthony Davis and number one rated defensive team"
+  },
+  {
+    "timestamp": "3:29",
+    "timestamp_seconds": 209.86,
+    "player": "Drummond",
+    "action": "Rebounding",
+    "description": "Rebound kept the lie by Drummond, but he's going to be called for a loose ball foul"
+  },
+  {
+    "timestamp": "4:00",
+    "timestamp_seconds": 240.89999999999998,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Curry using a Dremond Green screen nice feet inside Looney shot block"
+  },
+  {
+    "timestamp": "4:00",
+    "timestamp_seconds": 240.89999999999998,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Curry using a Dremond Green screen nice feet inside Looney shot block"
+  },
+  {
+    "timestamp": "4:00",
+    "timestamp_seconds": 240.89999999999998,
+    "player": "Dremond",
+    "action": "Shooting",
+    "description": "Curry using a Dremond Green screen nice feet inside Looney shot block"
+  },
+  {
+    "timestamp": "4:00",
+    "timestamp_seconds": 240.89999999999998,
+    "player": "Looney",
+    "action": "Shooting",
+    "description": "Curry using a Dremond Green screen nice feet inside Looney shot block"
+  },
+  {
+    "timestamp": "4:13",
+    "timestamp_seconds": 253.94,
+    "player": "James",
+    "action": "Block",
+    "description": "James with the tip in with the left hand and Frank Vogel's I read he thought David Davis got fouled again. I thought it was a good block"
+  },
+  {
+    "timestamp": "4:13",
+    "timestamp_seconds": 253.94,
+    "player": "Davis",
+    "action": "Block",
+    "description": "James with the tip in with the left hand and Frank Vogel's I read he thought David Davis got fouled again. I thought it was a good block"
+  },
+  {
+    "timestamp": "4:24",
+    "timestamp_seconds": 264.32,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Curry flips it up shot too strong Looney back out to Bayesmore wide open three"
+  },
+  {
+    "timestamp": "4:24",
+    "timestamp_seconds": 264.32,
+    "player": "Looney",
+    "action": "Shooting",
+    "description": "Curry flips it up shot too strong Looney back out to Bayesmore wide open three"
+  },
+  {
+    "timestamp": "5:25",
+    "timestamp_seconds": 325.86,
+    "player": "James",
+    "action": "Block",
+    "description": "Oh Wiggins with the block of James has to fire it up and it's the side of the backboard great defensive play from Andrew Wiggins"
+  },
+  {
+    "timestamp": "5:25",
+    "timestamp_seconds": 325.86,
+    "player": "Wiggins",
+    "action": "Block",
+    "description": "Oh Wiggins with the block of James has to fire it up and it's the side of the backboard great defensive play from Andrew Wiggins"
+  },
+  {
+    "timestamp": "5:25",
+    "timestamp_seconds": 325.86,
+    "player": "Andrew Wiggins",
+    "action": "Block",
+    "description": "Oh Wiggins with the block of James has to fire it up and it's the side of the backboard great defensive play from Andrew Wiggins"
+  },
+  {
+    "timestamp": "5:58",
+    "timestamp_seconds": 358.62,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "Wiggins got to buy James down the other end knocks down the three"
+  },
+  {
+    "timestamp": "5:58",
+    "timestamp_seconds": 358.62,
+    "player": "Wiggins",
+    "action": "3-Point Shot",
+    "description": "Wiggins got to buy James down the other end knocks down the three"
+  },
+  {
+    "timestamp": "6:22",
+    "timestamp_seconds": 382.66,
+    "player": "James",
+    "action": "Shooting",
+    "description": "Drummond puts it on the floor double team back out to Davis shot clock down a three James a three-point it way off"
+  },
+  {
+    "timestamp": "6:22",
+    "timestamp_seconds": 382.66,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Drummond puts it on the floor double team back out to Davis shot clock down a three James a three-point it way off"
+  },
+  {
+    "timestamp": "6:22",
+    "timestamp_seconds": 382.66,
+    "player": "Drummond",
+    "action": "Shooting",
+    "description": "Drummond puts it on the floor double team back out to Davis shot clock down a three James a three-point it way off"
+  },
+  {
+    "timestamp": "7:29",
+    "timestamp_seconds": 449.5,
+    "player": "Steph",
+    "action": "Shooting",
+    "description": "Pope and make Anthony Davis shoot and make threes you see shrewter initially on Steph Carrier"
+  },
+  {
+    "timestamp": "7:29",
+    "timestamp_seconds": 449.5,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Pope and make Anthony Davis shoot and make threes you see shrewter initially on Steph Carrier"
+  },
+  {
+    "timestamp": "7:29",
+    "timestamp_seconds": 449.5,
+    "player": "Anthony Davis",
+    "action": "Shooting",
+    "description": "Pope and make Anthony Davis shoot and make threes you see shrewter initially on Steph Carrier"
+  },
+  {
+    "timestamp": "7:29",
+    "timestamp_seconds": 449.5,
+    "player": "Pope",
+    "action": "Shooting",
+    "description": "Pope and make Anthony Davis shoot and make threes you see shrewter initially on Steph Carrier"
+  },
+  {
+    "timestamp": "7:42",
+    "timestamp_seconds": 462.24,
+    "player": "Wiggins",
+    "action": "3-Point Shot",
+    "description": "Wiggins pull up three"
+  },
+  {
+    "timestamp": "8:21",
+    "timestamp_seconds": 501.68,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Called well pope and made Anthony Davis shoot the long ball"
+  },
+  {
+    "timestamp": "8:21",
+    "timestamp_seconds": 501.68,
+    "player": "Anthony Davis",
+    "action": "Shooting",
+    "description": "Called well pope and made Anthony Davis shoot the long ball"
+  },
+  {
+    "timestamp": "8:21",
+    "timestamp_seconds": 501.68,
+    "player": "Pope",
+    "action": "Shooting",
+    "description": "Called well pope and made Anthony Davis shoot the long ball"
+  },
+  {
+    "timestamp": "9:23",
+    "timestamp_seconds": 563.76,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Trudeau guarding curry again curry launches a three pointer that one off the mark for the rebound want to scottow Anderson"
+  },
+  {
+    "timestamp": "9:52",
+    "timestamp_seconds": 592.68,
+    "player": "Shruder",
+    "action": "3-Point Shot",
+    "description": "Shruder corner three"
+  },
+  {
+    "timestamp": "9:55",
+    "timestamp_seconds": 595.04,
+    "player": "James",
+    "action": "Rebounding",
+    "description": "James the offensive rebound"
+  },
+  {
+    "timestamp": "11:00",
+    "timestamp_seconds": 660.16,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "I think the whole thing has been pretty exciting curry on the drive flips it up back shot is good step curry with his first field goal"
+  },
+  {
+    "timestamp": "11:21",
+    "timestamp_seconds": 681.86,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "James finds called well pulled now the corner three another one knocking it down called well pulled"
+  },
+  {
+    "timestamp": "11:59",
+    "timestamp_seconds": 719.86,
+    "player": "LeBron",
+    "action": "3-Point Shot",
+    "description": "This is where he tweaked it again just three days ago Lebron told us he hasn't stopped thinking about the way this injury"
+  },
+  {
+    "timestamp": "12:31",
+    "timestamp_seconds": 751.38,
+    "player": "Caruso",
+    "action": "3-Point Shot",
+    "description": "Caruso wide open nobody near him and he cans the three"
+  },
+  {
+    "timestamp": "12:38",
+    "timestamp_seconds": 758.5400000000001,
+    "player": "Pope",
+    "action": "Shooting",
+    "description": "On that one stay at home on called well Pope but Caruso shot the ball very well from three this year"
+  },
+  {
+    "timestamp": "12:38",
+    "timestamp_seconds": 758.5400000000001,
+    "player": "Caruso",
+    "action": "Shooting",
+    "description": "On that one stay at home on called well Pope but Caruso shot the ball very well from three this year"
+  },
+  {
+    "timestamp": "14:06",
+    "timestamp_seconds": 846.36,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Bayesmore goes right at Davis throws up a wild shot and draws the foul"
+  },
+  {
+    "timestamp": "15:17",
+    "timestamp_seconds": 917.3199999999999,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Stuff Curry's taking just three shots so far"
+  },
+  {
+    "timestamp": "15:42",
+    "timestamp_seconds": 942.02,
+    "player": "Kuzma",
+    "action": "Driving",
+    "description": "Kuzma the Karuso drives inside lefty lamp as good as goes crashing"
+  },
+  {
+    "timestamp": "15:57",
+    "timestamp_seconds": 957.82,
+    "player": "Kuzma",
+    "action": "Steal",
+    "description": "Active hands come up with the steal and good delivery by Kuzma"
+  },
+  {
+    "timestamp": "16:15",
+    "timestamp_seconds": 975.64,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Curry fakes the three gets away from Davis off one foot too strong"
+  },
+  {
+    "timestamp": "16:15",
+    "timestamp_seconds": 975.64,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "Curry fakes the three gets away from Davis off one foot too strong"
+  },
+  {
+    "timestamp": "16:21",
+    "timestamp_seconds": 981.98,
+    "player": "Curry",
+    "action": "Scoring",
+    "description": "Lakers have made a difficult early for Steph Curry"
+  },
+  {
+    "timestamp": "16:21",
+    "timestamp_seconds": 981.98,
+    "player": "Steph",
+    "action": "Scoring",
+    "description": "Lakers have made a difficult early for Steph Curry"
+  },
+  {
+    "timestamp": "16:26",
+    "timestamp_seconds": 986.12,
+    "player": "Kuzma",
+    "action": "3-Point Shot",
+    "description": "Kuzma a three-pointer"
+  },
+  {
+    "timestamp": "18:14",
+    "timestamp_seconds": 1094.52,
+    "player": "Curry",
+    "action": "Rebounding",
+    "description": "I'm just saying what they're thinking Curry on the reboundal deficit miss"
+  },
+  {
+    "timestamp": "18:19",
+    "timestamp_seconds": 1099.42,
+    "player": "Curry",
+    "action": "Rebounding",
+    "description": "Curry way downtown in and out and Davis the rebound"
+  },
+  {
+    "timestamp": "18:19",
+    "timestamp_seconds": 1099.42,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "Curry way downtown in and out and Davis the rebound"
+  },
+  {
+    "timestamp": "18:34",
+    "timestamp_seconds": 1114.08,
+    "player": "Harrell",
+    "action": "Shooting",
+    "description": "Montreis Harrell spins flips it up shot won't go tip by Kuzma and another offensive rebound which he's been doing all season"
+  },
+  {
+    "timestamp": "18:34",
+    "timestamp_seconds": 1114.08,
+    "player": "Kuzma",
+    "action": "Shooting",
+    "description": "Montreis Harrell spins flips it up shot won't go tip by Kuzma and another offensive rebound which he's been doing all season"
+  },
+  {
+    "timestamp": "18:42",
+    "timestamp_seconds": 1122.24,
+    "player": "Shruder",
+    "action": "3-Point Shot",
+    "description": "Shruder misses the three"
+  },
+  {
+    "timestamp": "18:44",
+    "timestamp_seconds": 1124.28,
+    "player": "Curry",
+    "action": "Rebounding",
+    "description": "And curry the rebound curry average the career high five and a half rebounds per game this year gets inside draws the foul counter and one"
+  },
+  {
+    "timestamp": "19:36",
+    "timestamp_seconds": 1176.46,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "He was 0 for 6th sanftany Davis before that shot and it's back to 4"
+  },
+  {
+    "timestamp": "19:46",
+    "timestamp_seconds": 1186.8,
+    "player": "Green",
+    "action": "3-Point Shot",
+    "description": "And get some space from green want to sconto Anderson knocks down a three turns and says something to the fans and runs down the floor"
+  },
+  {
+    "timestamp": "20:05",
+    "timestamp_seconds": 1205.1200000000001,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Shruder shot block to sconto Anderson saves it, but right to Harold block by green, but a foul"
+  },
+  {
+    "timestamp": "20:05",
+    "timestamp_seconds": 1205.1200000000001,
+    "player": "Shruder",
+    "action": "Shooting",
+    "description": "Shruder shot block to sconto Anderson saves it, but right to Harold block by green, but a foul"
+  },
+  {
+    "timestamp": "21:06",
+    "timestamp_seconds": 1266.14,
+    "player": "Green",
+    "action": "Passing",
+    "description": "initiating offense settings greens extra pass"
+  },
+  {
+    "timestamp": "21:20",
+    "timestamp_seconds": 1280.92,
+    "player": "Looney",
+    "action": "Rebounding",
+    "description": "Well, I wanted to give a little credit come on looney the rebound"
+  },
+  {
+    "timestamp": "21:42",
+    "timestamp_seconds": 1302.4,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Rebound shooter final seconds no files to give here shooter ahead to Davis Davis three pointers up shot short"
+  },
+  {
+    "timestamp": "22:57",
+    "timestamp_seconds": 1377.96,
+    "player": "Curry",
+    "action": "Rebounding",
+    "description": "Looney's follow misses Harold the rebound no curry no green with James on the floor"
+  },
+  {
+    "timestamp": "22:57",
+    "timestamp_seconds": 1377.96,
+    "player": "James",
+    "action": "Rebounding",
+    "description": "Looney's follow misses Harold the rebound no curry no green with James on the floor"
+  },
+  {
+    "timestamp": "22:57",
+    "timestamp_seconds": 1377.96,
+    "player": "Green",
+    "action": "Rebounding",
+    "description": "Looney's follow misses Harold the rebound no curry no green with James on the floor"
+  },
+  {
+    "timestamp": "22:57",
+    "timestamp_seconds": 1377.96,
+    "player": "Looney",
+    "action": "Rebounding",
+    "description": "Looney's follow misses Harold the rebound no curry no green with James on the floor"
+  },
+  {
+    "timestamp": "23:05",
+    "timestamp_seconds": 1385.3600000000001,
+    "player": "James",
+    "action": "Driving",
+    "description": "This is going to be a challenge James drives"
+  },
+  {
+    "timestamp": "23:09",
+    "timestamp_seconds": 1389.04,
+    "player": "Looney",
+    "action": "Rebounding",
+    "description": "Can't get it come on looney grabs another rebound seven rebounds already for come on looney. They'll need him"
+  },
+  {
+    "timestamp": "23:35",
+    "timestamp_seconds": 1415.78,
+    "player": "Looney",
+    "action": "Shooting",
+    "description": "Shooter drives shooter misses looney grabs another defensive rebound"
+  },
+  {
+    "timestamp": "23:56",
+    "timestamp_seconds": 1436.1000000000001,
+    "player": "Looney",
+    "action": "3-Point Shot",
+    "description": "Not that time fight for the rebound come on looney nine rebounds now already another three"
+  },
+  {
+    "timestamp": "25:04",
+    "timestamp_seconds": 1504.8600000000001,
+    "player": "LeBron",
+    "action": "Shooting",
+    "description": "Looney shot in and out LeBron James rips down the rebound that's outstanding possession of a great ball movement"
+  },
+  {
+    "timestamp": "25:04",
+    "timestamp_seconds": 1504.8600000000001,
+    "player": "LeBron James",
+    "action": "Shooting",
+    "description": "Looney shot in and out LeBron James rips down the rebound that's outstanding possession of a great ball movement"
+  },
+  {
+    "timestamp": "25:04",
+    "timestamp_seconds": 1504.8600000000001,
+    "player": "James",
+    "action": "Shooting",
+    "description": "Looney shot in and out LeBron James rips down the rebound that's outstanding possession of a great ball movement"
+  },
+  {
+    "timestamp": "25:04",
+    "timestamp_seconds": 1504.8600000000001,
+    "player": "Looney",
+    "action": "Shooting",
+    "description": "Looney shot in and out LeBron James rips down the rebound that's outstanding possession of a great ball movement"
+  },
+  {
+    "timestamp": "26:13",
+    "timestamp_seconds": 1573.9,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "They played with as a free throw rebounds given up they played with Anthony Davis at center"
+  },
+  {
+    "timestamp": "26:13",
+    "timestamp_seconds": 1573.9,
+    "player": "Anthony Davis",
+    "action": "Rebounding",
+    "description": "They played with as a free throw rebounds given up they played with Anthony Davis at center"
+  },
+  {
+    "timestamp": "26:53",
+    "timestamp_seconds": 1613.78,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "Pull to Wiggins Wiggins trying to slam a shot block Horton Tucker right there minimum of the rim and then a foul"
+  },
+  {
+    "timestamp": "28:02",
+    "timestamp_seconds": 1682.56,
+    "player": "Kuzma",
+    "action": "Rebounding",
+    "description": "At that time is Kuzma gets the rebound"
+  },
+  {
+    "timestamp": "29:24",
+    "timestamp_seconds": 1764.6399999999999,
+    "player": "James",
+    "action": "Block",
+    "description": "And I like how Wiggins is picking up full court on occasions James drives gets inside block bites of scottal Anderson knock that abounds"
+  },
+  {
+    "timestamp": "29:24",
+    "timestamp_seconds": 1764.6399999999999,
+    "player": "Wiggins",
+    "action": "Block",
+    "description": "And I like how Wiggins is picking up full court on occasions James drives gets inside block bites of scottal Anderson knock that abounds"
+  },
+  {
+    "timestamp": "29:48",
+    "timestamp_seconds": 1788.92,
+    "player": "James",
+    "action": "Shooting",
+    "description": "James gets inside bank shot missed it all chipped out to scottal Anderson pushing it up the floor"
+  },
+  {
+    "timestamp": "30:02",
+    "timestamp_seconds": 1802.76,
+    "player": "Wiggins",
+    "action": "3-Point Shot",
+    "description": "Out there with loony and Wiggins Wiggins fires a three way off"
+  },
+  {
+    "timestamp": "30:21",
+    "timestamp_seconds": 1821.9199999999998,
+    "player": "Kuzma",
+    "action": "Shooting",
+    "description": "Kuzma gets that one to go prior to that shot the Lakers were shooting 24% from the field they had missed eight shots in a row"
+  },
+  {
+    "timestamp": "30:38",
+    "timestamp_seconds": 1838.5,
+    "player": "Wiggins",
+    "action": "3-Point Shot",
+    "description": "Wiggins to loony to scottal Anderson can't get the three Montreas Harrow with the board"
+  },
+  {
+    "timestamp": "31:04",
+    "timestamp_seconds": 1864.98,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "The warriors are shooting 38% 29 from three and Steph Curry has five points"
+  },
+  {
+    "timestamp": "31:04",
+    "timestamp_seconds": 1864.98,
+    "player": "Steph",
+    "action": "Shooting",
+    "description": "The warriors are shooting 38% 29 from three and Steph Curry has five points"
+  },
+  {
+    "timestamp": "31:38",
+    "timestamp_seconds": 1898.44,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "Davis tries the three"
+  },
+  {
+    "timestamp": "31:42",
+    "timestamp_seconds": 1902.5,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Davis and not shot the ball well from three since his return from the camp injury"
+  },
+  {
+    "timestamp": "32:55",
+    "timestamp_seconds": 1975.12,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Then a shooter trying to get going still looking for his first field go throws it away green with the steel"
+  },
+  {
+    "timestamp": "33:12",
+    "timestamp_seconds": 1992.12,
+    "player": "Green",
+    "action": "Scoring",
+    "description": "You see shrewter he's got to come off the score green stunning at him and recovering"
+  },
+  {
+    "timestamp": "33:35",
+    "timestamp_seconds": 2015.0,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Although Davis's presence had something to do with that called well Pope three pointer short right back to him up top to shooter"
+  },
+  {
+    "timestamp": "33:35",
+    "timestamp_seconds": 2015.0,
+    "player": "Pope",
+    "action": "Shooting",
+    "description": "Although Davis's presence had something to do with that called well Pope three pointer short right back to him up top to shooter"
+  },
+  {
+    "timestamp": "34:12",
+    "timestamp_seconds": 2052.25,
+    "player": "Caruso",
+    "action": "3-Point Shot",
+    "description": "Caruso barely had his hand knocks down the three"
+  },
+  {
+    "timestamp": "34:27",
+    "timestamp_seconds": 2067.63,
+    "player": "Caruso",
+    "action": "Driving",
+    "description": "That's kind of Anderson base more fakes drives on Caruso leans in on drum and flips it up and way off"
+  },
+  {
+    "timestamp": "35:40",
+    "timestamp_seconds": 2140.11,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Curry for three his first three-pointer of the half and from way down town"
+  },
+  {
+    "timestamp": "35:46",
+    "timestamp_seconds": 2146.9500000000003,
+    "player": "Davis",
+    "action": "Scoring",
+    "description": "And it makes it a ten-point game again, but Davis is now at the five position"
+  },
+  {
+    "timestamp": "36:28",
+    "timestamp_seconds": 2188.99,
+    "player": "Caruso",
+    "action": "Shooting",
+    "description": "Caruso shot clock winding down and pool with a foul with 3.4 remaining on the shot block"
+  },
+  {
+    "timestamp": "37:03",
+    "timestamp_seconds": 2223.35,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Despite the horrific shooting by the Lakers especially their stars again. They're only down eight Curry"
+  },
+  {
+    "timestamp": "37:09",
+    "timestamp_seconds": 2229.3100000000004,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Another three back to back three is for step curry now. He's got 12"
+  },
+  {
+    "timestamp": "37:34",
+    "timestamp_seconds": 2254.73,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Davis settles for the jump shot in the rebound to scottow Anderson"
+  },
+  {
+    "timestamp": "37:39",
+    "timestamp_seconds": 2259.83,
+    "player": "Green",
+    "action": "Passing",
+    "description": "Green beautiful pass ahead to scottow Anderson strip by called well poke"
+  },
+  {
+    "timestamp": "37:47",
+    "timestamp_seconds": 2267.01,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "Shruder tries a three and Trudor's still without a field goal James to Davis Davis block green got a piece of it"
+  },
+  {
+    "timestamp": "37:47",
+    "timestamp_seconds": 2267.01,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "Shruder tries a three and Trudor's still without a field goal James to Davis Davis block green got a piece of it"
+  },
+  {
+    "timestamp": "37:47",
+    "timestamp_seconds": 2267.01,
+    "player": "Green",
+    "action": "3-Point Shot",
+    "description": "Shruder tries a three and Trudor's still without a field goal James to Davis Davis block green got a piece of it"
+  },
+  {
+    "timestamp": "37:47",
+    "timestamp_seconds": 2267.01,
+    "player": "Shruder",
+    "action": "3-Point Shot",
+    "description": "Shruder tries a three and Trudor's still without a field goal James to Davis Davis block green got a piece of it"
+  },
+  {
+    "timestamp": "37:57",
+    "timestamp_seconds": 2277.57,
+    "player": "Curry",
+    "action": "Block",
+    "description": "Another forced turnover by golden state Curry gets inside block by shruder"
+  },
+  {
+    "timestamp": "37:57",
+    "timestamp_seconds": 2277.57,
+    "player": "Shruder",
+    "action": "Block",
+    "description": "Another forced turnover by golden state Curry gets inside block by shruder"
+  },
+  {
+    "timestamp": "38:04",
+    "timestamp_seconds": 2284.13,
+    "player": "Caruso",
+    "action": "Layup",
+    "description": "Caruso almost tried an alley up to himself but somehow managed to get the layup to go"
+  },
+  {
+    "timestamp": "38:16",
+    "timestamp_seconds": 2296.55,
+    "player": "James",
+    "action": "Dunk",
+    "description": "But I tell you what green not giving James a dunk"
+  },
+  {
+    "timestamp": "38:16",
+    "timestamp_seconds": 2296.55,
+    "player": "Green",
+    "action": "Dunk",
+    "description": "But I tell you what green not giving James a dunk"
+  },
+  {
+    "timestamp": "38:24",
+    "timestamp_seconds": 2304.83,
+    "player": "Green",
+    "action": "3-Point Shot",
+    "description": "Dremont green cross court to pull pull for three knocks it down"
+  },
+  {
+    "timestamp": "40:20",
+    "timestamp_seconds": 2420.41,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "And they have 38 points with a minute a half to play in the second curry three pointer to strong rebound caruso"
+  },
+  {
+    "timestamp": "40:20",
+    "timestamp_seconds": 2420.41,
+    "player": "Caruso",
+    "action": "3-Point Shot",
+    "description": "And they have 38 points with a minute a half to play in the second curry three pointer to strong rebound caruso"
+  },
+  {
+    "timestamp": "40:43",
+    "timestamp_seconds": 2443.57,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "Called well pulled corner three is up shot no good and Wiggins with a rebound and great block out by Tuscano"
+  },
+  {
+    "timestamp": "40:54",
+    "timestamp_seconds": 2454.37,
+    "player": "James",
+    "action": "Shooting",
+    "description": "But he eliminated Davis's size with that block out Wiggins nice turn around shot wouldn't go James looks to lead the break"
+  },
+  {
+    "timestamp": "40:54",
+    "timestamp_seconds": 2454.37,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "But he eliminated Davis's size with that block out Wiggins nice turn around shot wouldn't go James looks to lead the break"
+  },
+  {
+    "timestamp": "40:54",
+    "timestamp_seconds": 2454.37,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "But he eliminated Davis's size with that block out Wiggins nice turn around shot wouldn't go James looks to lead the break"
+  },
+  {
+    "timestamp": "41:01",
+    "timestamp_seconds": 2461.39,
+    "player": "Caruso",
+    "action": "Shooting",
+    "description": "The other way pass inside Caruso lay up tough shot able to get it off the class Caruso is their leading score and they're only playing our double figures with 12"
+  },
+  {
+    "timestamp": "41:41",
+    "timestamp_seconds": 2501.11,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "The three leading scores for the LA Lakers James Davis and Truder three for 27 from the field"
+  },
+  {
+    "timestamp": "41:41",
+    "timestamp_seconds": 2501.11,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "The three leading scores for the LA Lakers James Davis and Truder three for 27 from the field"
+  },
+  {
+    "timestamp": "42:01",
+    "timestamp_seconds": 2521.23,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Either are they curry step back three"
+  },
+  {
+    "timestamp": "42:20",
+    "timestamp_seconds": 2540.9100000000003,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Defensively putting on a clinic and then Curry coming alive from three point range in the second period"
+  },
+  {
+    "timestamp": "43:14",
+    "timestamp_seconds": 2594.19,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "There's a shot clocks down to four Truder drives on Wiggins and a foul"
+  },
+  {
+    "timestamp": "44:39",
+    "timestamp_seconds": 2679.29,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Curry saves it to write to shooter on an Aaron pass from green"
+  },
+  {
+    "timestamp": "44:39",
+    "timestamp_seconds": 2679.29,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Curry saves it to write to shooter on an Aaron pass from green"
+  },
+  {
+    "timestamp": "44:45",
+    "timestamp_seconds": 2685.43,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "James gets into the paint mid-range jumper shot won't go looney another rebound quick outlet to curry"
+  },
+  {
+    "timestamp": "44:45",
+    "timestamp_seconds": 2685.43,
+    "player": "James",
+    "action": "Shooting",
+    "description": "James gets into the paint mid-range jumper shot won't go looney another rebound quick outlet to curry"
+  },
+  {
+    "timestamp": "44:45",
+    "timestamp_seconds": 2685.43,
+    "player": "Looney",
+    "action": "Shooting",
+    "description": "James gets into the paint mid-range jumper shot won't go looney another rebound quick outlet to curry"
+  },
+  {
+    "timestamp": "44:50",
+    "timestamp_seconds": 2690.57,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Curry to base more attacks the rim lay up shot no good"
+  },
+  {
+    "timestamp": "45:03",
+    "timestamp_seconds": 2703.69,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Trudeau draws the foul shot long go, but Steph Curry will pick up his second personal"
+  },
+  {
+    "timestamp": "45:03",
+    "timestamp_seconds": 2703.69,
+    "player": "Steph",
+    "action": "Shooting",
+    "description": "Trudeau draws the foul shot long go, but Steph Curry will pick up his second personal"
+  },
+  {
+    "timestamp": "47:41",
+    "timestamp_seconds": 2861.85,
+    "player": "Curry",
+    "action": "Rebounding",
+    "description": "Sorry behind the back flips it up and where it will short and his Davis grabs the rebound and especially the screener would curry involved that puts in the dilemma defensively"
+  },
+  {
+    "timestamp": "47:41",
+    "timestamp_seconds": 2861.85,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "Sorry behind the back flips it up and where it will short and his Davis grabs the rebound and especially the screener would curry involved that puts in the dilemma defensively"
+  },
+  {
+    "timestamp": "47:53",
+    "timestamp_seconds": 2873.51,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "James the Davis Davis three point or one go"
+  },
+  {
+    "timestamp": "47:53",
+    "timestamp_seconds": 2873.51,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "James the Davis Davis three point or one go"
+  },
+  {
+    "timestamp": "48:12",
+    "timestamp_seconds": 2892.89,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Rayman green upset after the turnover the called well pope will shoot a couple of free throws"
+  },
+  {
+    "timestamp": "48:12",
+    "timestamp_seconds": 2892.89,
+    "player": "Pope",
+    "action": "Shooting",
+    "description": "Rayman green upset after the turnover the called well pope will shoot a couple of free throws"
+  },
+  {
+    "timestamp": "49:28",
+    "timestamp_seconds": 2968.85,
+    "player": "Shruder",
+    "action": "3-Point Shot",
+    "description": "Back up shruder puts up the three puts it in"
+  },
+  {
+    "timestamp": "50:12",
+    "timestamp_seconds": 3012.9100000000003,
+    "player": "Shruder",
+    "action": "Shooting",
+    "description": "Shruder commits the personal that's going to be his first and Carrey will shoot three free throws"
+  },
+  {
+    "timestamp": "51:34",
+    "timestamp_seconds": 3094.73,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "As Anthony Davis takes another three. I just didn't believe in it"
+  },
+  {
+    "timestamp": "51:34",
+    "timestamp_seconds": 3094.73,
+    "player": "Anthony Davis",
+    "action": "3-Point Shot",
+    "description": "As Anthony Davis takes another three. I just didn't believe in it"
+  },
+  {
+    "timestamp": "51:46",
+    "timestamp_seconds": 3106.23,
+    "player": "Davis",
+    "action": "Passing",
+    "description": "Drummond tried to get it to go he thought he was fouled again the initial dream on green defense on Davis force him to pass it"
+  },
+  {
+    "timestamp": "51:46",
+    "timestamp_seconds": 3106.23,
+    "player": "Green",
+    "action": "Passing",
+    "description": "Drummond tried to get it to go he thought he was fouled again the initial dream on green defense on Davis force him to pass it"
+  },
+  {
+    "timestamp": "51:46",
+    "timestamp_seconds": 3106.23,
+    "player": "Drummond",
+    "action": "Passing",
+    "description": "Drummond tried to get it to go he thought he was fouled again the initial dream on green defense on Davis force him to pass it"
+  },
+  {
+    "timestamp": "51:55",
+    "timestamp_seconds": 3115.73,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "Andrew Wiggins now with 13 points. How about the move by Wiggins? That's not an easy shot"
+  },
+  {
+    "timestamp": "51:55",
+    "timestamp_seconds": 3115.73,
+    "player": "Andrew Wiggins",
+    "action": "Shooting",
+    "description": "Andrew Wiggins now with 13 points. How about the move by Wiggins? That's not an easy shot"
+  },
+  {
+    "timestamp": "52:28",
+    "timestamp_seconds": 3148.0099999999998,
+    "player": "Curry",
+    "action": "Passing",
+    "description": "Curry splits the defense dangerous pass stolen by Caldwell Pope"
+  },
+  {
+    "timestamp": "52:28",
+    "timestamp_seconds": 3148.0099999999998,
+    "player": "Pope",
+    "action": "Passing",
+    "description": "Curry splits the defense dangerous pass stolen by Caldwell Pope"
+  },
+  {
+    "timestamp": "54:13",
+    "timestamp_seconds": 3253.63,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "Wiggins against Karuso Wiggins nice feet inside Looney gathers and throws up a shot off the glass"
+  },
+  {
+    "timestamp": "54:13",
+    "timestamp_seconds": 3253.63,
+    "player": "Looney",
+    "action": "Shooting",
+    "description": "Wiggins against Karuso Wiggins nice feet inside Looney gathers and throws up a shot off the glass"
+  },
+  {
+    "timestamp": "54:21",
+    "timestamp_seconds": 3261.49,
+    "player": "Looney",
+    "action": "Rebounding",
+    "description": "But Looney's played some excellent defense and he has 12 rebounds"
+  },
+  {
+    "timestamp": "55:14",
+    "timestamp_seconds": 3314.89,
+    "player": "Drummond",
+    "action": "Scoring",
+    "description": "Posting up drummond against Looney. I know he scored the last possession"
+  },
+  {
+    "timestamp": "55:14",
+    "timestamp_seconds": 3314.89,
+    "player": "Looney",
+    "action": "Scoring",
+    "description": "Posting up drummond against Looney. I know he scored the last possession"
+  },
+  {
+    "timestamp": "56:09",
+    "timestamp_seconds": 3369.9100000000003,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "And that's a huge turn of events up 12 all the momentum going in transition curry turns it over and then a three"
+  },
+  {
+    "timestamp": "56:17",
+    "timestamp_seconds": 3377.07,
+    "player": "Caruso",
+    "action": "Steal",
+    "description": "Caruso steal on that an important play"
+  },
+  {
+    "timestamp": "56:32",
+    "timestamp_seconds": 3392.43,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Shaking ahead as chef curry with the shot"
+  },
+  {
+    "timestamp": "56:45",
+    "timestamp_seconds": 3405.75,
+    "player": "Davis",
+    "action": "Block",
+    "description": "Did it court side dream on green block by Davis Anthony Davis sensational defensive play"
+  },
+  {
+    "timestamp": "56:45",
+    "timestamp_seconds": 3405.75,
+    "player": "Anthony Davis",
+    "action": "Block",
+    "description": "Did it court side dream on green block by Davis Anthony Davis sensational defensive play"
+  },
+  {
+    "timestamp": "56:45",
+    "timestamp_seconds": 3405.75,
+    "player": "Green",
+    "action": "Block",
+    "description": "Did it court side dream on green block by Davis Anthony Davis sensational defensive play"
+  },
+  {
+    "timestamp": "56:56",
+    "timestamp_seconds": 3416.11,
+    "player": "Green",
+    "action": "Layup",
+    "description": "And green usually gets a layup of game off that fake"
+  },
+  {
+    "timestamp": "57:00",
+    "timestamp_seconds": 3420.37,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "To curry Davis calling for it gets it inside shots good and one"
+  },
+  {
+    "timestamp": "57:00",
+    "timestamp_seconds": 3420.37,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "To curry Davis calling for it gets it inside shots good and one"
+  },
+  {
+    "timestamp": "57:05",
+    "timestamp_seconds": 3425.77,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "Davis it both ends in a chance for a three point play"
+  },
+  {
+    "timestamp": "57:59",
+    "timestamp_seconds": 3479.03,
+    "player": "Curry",
+    "action": "Layup",
+    "description": "Six point warriors lead four minutes to play pass inside the curry missed the layup, but a foul"
+  },
+  {
+    "timestamp": "59:19",
+    "timestamp_seconds": 3559.93,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Davis spins contested shot way off"
+  },
+  {
+    "timestamp": "59:23",
+    "timestamp_seconds": 3563.55,
+    "player": "Green",
+    "action": "Rebounding",
+    "description": "That one hit the side of the backboard and green gets the rebound"
+  },
+  {
+    "timestamp": "59:27",
+    "timestamp_seconds": 3567.19,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "A well-timed double team by green on the baseline side Davis now three for 16 to"
+  },
+  {
+    "timestamp": "59:27",
+    "timestamp_seconds": 3567.19,
+    "player": "Green",
+    "action": "3-Point Shot",
+    "description": "A well-timed double team by green on the baseline side Davis now three for 16 to"
+  },
+  {
+    "timestamp": "59:37",
+    "timestamp_seconds": 3577.57,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "A lot of contact over in the far side baseball 3.01 go Davis the rebound"
+  },
+  {
+    "timestamp": "59:52",
+    "timestamp_seconds": 3592.15,
+    "player": "Green",
+    "action": "Block",
+    "description": "Alex Caruso goes all the way blocked by green"
+  },
+  {
+    "timestamp": "59:52",
+    "timestamp_seconds": 3592.15,
+    "player": "Caruso",
+    "action": "Block",
+    "description": "Alex Caruso goes all the way blocked by green"
+  },
+  {
+    "timestamp": "59:52",
+    "timestamp_seconds": 3592.15,
+    "player": "Alex Caruso",
+    "action": "Block",
+    "description": "Alex Caruso goes all the way blocked by green"
+  },
+  {
+    "timestamp": "60:23",
+    "timestamp_seconds": 3623.69,
+    "player": "Green",
+    "action": "Block",
+    "description": "That's outstanding defense and help by a drae mon green has been doing it all night long. That's his third block"
+  },
+  {
+    "timestamp": "60:40",
+    "timestamp_seconds": 3640.99,
+    "player": "James",
+    "action": "Passing",
+    "description": "Pass inside a wig and stolen by James that's the seventh turn over here in the third"
+  },
+  {
+    "timestamp": "61:04",
+    "timestamp_seconds": 3664.11,
+    "player": "Wiggins",
+    "action": "3-Point Shot",
+    "description": "The Warriors get it back Wiggins for three"
+  },
+  {
+    "timestamp": "62:05",
+    "timestamp_seconds": 3725.9700000000003,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "James three pointer puts it in his first three pointer"
+  },
+  {
+    "timestamp": "62:20",
+    "timestamp_seconds": 3740.95,
+    "player": "Curry",
+    "action": "Passing",
+    "description": "Sometimes you just got to give credit to great. Oh curry beautiful pass, but Wiggins couldn't handle it and Kusma comes the other way"
+  },
+  {
+    "timestamp": "62:20",
+    "timestamp_seconds": 3740.95,
+    "player": "Wiggins",
+    "action": "Passing",
+    "description": "Sometimes you just got to give credit to great. Oh curry beautiful pass, but Wiggins couldn't handle it and Kusma comes the other way"
+  },
+  {
+    "timestamp": "62:45",
+    "timestamp_seconds": 3765.4700000000003,
+    "player": "Curry",
+    "action": "Driving",
+    "description": "Curry on the drive"
+  },
+  {
+    "timestamp": "62:48",
+    "timestamp_seconds": 3768.73,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Curry for three. That's good Steph Curry from way downtown"
+  },
+  {
+    "timestamp": "62:48",
+    "timestamp_seconds": 3768.73,
+    "player": "Steph",
+    "action": "3-Point Shot",
+    "description": "Curry for three. That's good Steph Curry from way downtown"
+  },
+  {
+    "timestamp": "63:11",
+    "timestamp_seconds": 3791.83,
+    "player": "James",
+    "action": "Layup",
+    "description": "James back to auto Caruso and other backdoor cut leads to a layup"
+  },
+  {
+    "timestamp": "63:11",
+    "timestamp_seconds": 3791.83,
+    "player": "Caruso",
+    "action": "Layup",
+    "description": "James back to auto Caruso and other backdoor cut leads to a layup"
+  },
+  {
+    "timestamp": "63:22",
+    "timestamp_seconds": 3802.9900000000002,
+    "player": "Green",
+    "action": "3-Point Shot",
+    "description": "And so there's more cutting avenues. No fouls to give here for the Lakers. Stream on green wide open for three"
+  },
+  {
+    "timestamp": "64:12",
+    "timestamp_seconds": 3852.65,
+    "player": "James",
+    "action": "Rebounding",
+    "description": "All right, Rachel James the rebound after a beautiful feed to Davis to tie the game"
+  },
+  {
+    "timestamp": "64:12",
+    "timestamp_seconds": 3852.65,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "All right, Rachel James the rebound after a beautiful feed to Davis to tie the game"
+  },
+  {
+    "timestamp": "64:31",
+    "timestamp_seconds": 3871.47,
+    "player": "James",
+    "action": "Shooting",
+    "description": "But this is danger zone right now James inside bank shot missed it and come on"
+  },
+  {
+    "timestamp": "65:12",
+    "timestamp_seconds": 3912.69,
+    "player": "LeBron",
+    "action": "Assist",
+    "description": "That's the ninth assists from LeBron James"
+  },
+  {
+    "timestamp": "65:12",
+    "timestamp_seconds": 3912.69,
+    "player": "LeBron James",
+    "action": "Assist",
+    "description": "That's the ninth assists from LeBron James"
+  },
+  {
+    "timestamp": "65:12",
+    "timestamp_seconds": 3912.69,
+    "player": "James",
+    "action": "Assist",
+    "description": "That's the ninth assists from LeBron James"
+  },
+  {
+    "timestamp": "65:37",
+    "timestamp_seconds": 3937.55,
+    "player": "Curry",
+    "action": "Driving",
+    "description": "He's got to be great when Curry rests James drives on to scontoanders at Lair pants at home"
+  },
+  {
+    "timestamp": "65:37",
+    "timestamp_seconds": 3937.55,
+    "player": "James",
+    "action": "Driving",
+    "description": "He's got to be great when Curry rests James drives on to scontoanders at Lair pants at home"
+  },
+  {
+    "timestamp": "66:29",
+    "timestamp_seconds": 3989.3900000000003,
+    "player": "Curry",
+    "action": "Layup",
+    "description": "That's six point lead this a 19 point turnaround here on the second half Curry looking to scontoanders in driving layup"
+  },
+  {
+    "timestamp": "67:37",
+    "timestamp_seconds": 4057.19,
+    "player": "Caruso",
+    "action": "Driving",
+    "description": "His team trails by five two and a half gone by in the fourth caruso the drive"
+  },
+  {
+    "timestamp": "67:42",
+    "timestamp_seconds": 4062.35,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Davis the tip won't go to scontoanders in the rebound again dream on green contesting the shot"
+  },
+  {
+    "timestamp": "67:42",
+    "timestamp_seconds": 4062.35,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Davis the tip won't go to scontoanders in the rebound again dream on green contesting the shot"
+  },
+  {
+    "timestamp": "69:08",
+    "timestamp_seconds": 4148.7699999999995,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "Davis jump shot got it Anthony Davis has come alive in a second half"
+  },
+  {
+    "timestamp": "69:08",
+    "timestamp_seconds": 4148.7699999999995,
+    "player": "Anthony Davis",
+    "action": "Shooting",
+    "description": "Davis jump shot got it Anthony Davis has come alive in a second half"
+  },
+  {
+    "timestamp": "69:19",
+    "timestamp_seconds": 4159.45,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Curry for three answers"
+  },
+  {
+    "timestamp": "69:22",
+    "timestamp_seconds": 4162.11,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Steph Curry with a six three pointer. He's got 29"
+  },
+  {
+    "timestamp": "69:22",
+    "timestamp_seconds": 4162.11,
+    "player": "Steph",
+    "action": "3-Point Shot",
+    "description": "Steph Curry with a six three pointer. He's got 29"
+  },
+  {
+    "timestamp": "69:41",
+    "timestamp_seconds": 4181.969999999999,
+    "player": "Kuzma",
+    "action": "Shooting",
+    "description": "Matthews inside Kuzma shot clock at four Kuzma tough fall away shot in and out"
+  },
+  {
+    "timestamp": "69:47",
+    "timestamp_seconds": 4187.95,
+    "player": "Green",
+    "action": "Rebounding",
+    "description": "Now the fight for the rebound goes to dream on green"
+  },
+  {
+    "timestamp": "69:53",
+    "timestamp_seconds": 4193.25,
+    "player": "Curry",
+    "action": "Driving",
+    "description": "Curry on the drive scoop lay up he bans it home all with a sweet move from Curry"
+  },
+  {
+    "timestamp": "70:15",
+    "timestamp_seconds": 4215.95,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Shrouda inserted into the game Steph Curry knocks down a three gets a rhythm and keeps them off balance turns to corner"
+  },
+  {
+    "timestamp": "70:15",
+    "timestamp_seconds": 4215.95,
+    "player": "Steph",
+    "action": "3-Point Shot",
+    "description": "Shrouda inserted into the game Steph Curry knocks down a three gets a rhythm and keeps them off balance turns to corner"
+  },
+  {
+    "timestamp": "70:23",
+    "timestamp_seconds": 4223.69,
+    "player": "Curry",
+    "action": "3-Point Shot",
+    "description": "Spectacular finish before the contest an efficient game for Curry 10 of 18 from the field six of nine from three"
+  },
+  {
+    "timestamp": "70:31",
+    "timestamp_seconds": 4231.589999999999,
+    "player": "Davis",
+    "action": "3-Point Shot",
+    "description": "Davis left alone for three got it and the Davis his first three pointer of the night"
+  },
+  {
+    "timestamp": "71:09",
+    "timestamp_seconds": 4269.57,
+    "player": "Curry",
+    "action": "Driving",
+    "description": "Curry gets free drives inside scoop lay up missed it. He thought he was hit steep curves furious"
+  },
+  {
+    "timestamp": "71:16",
+    "timestamp_seconds": 4276.09,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "Here's James the other way long three pointer"
+  },
+  {
+    "timestamp": "72:12",
+    "timestamp_seconds": 4332.59,
+    "player": "Green",
+    "action": "Passing",
+    "description": "Well, he's at his minute limit. I wonder if we'll see him again and tripass knocked away by dream on green"
+  },
+  {
+    "timestamp": "72:17",
+    "timestamp_seconds": 4337.83,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "Pull ahead to Wiggins Wiggins drives floats it up shot is good"
+  },
+  {
+    "timestamp": "74:12",
+    "timestamp_seconds": 4452.89,
+    "player": "Wiggins",
+    "action": "3-Point Shot",
+    "description": "Finds Wiggins Wiggins gets inside draws the contact and banks at home chance for a three point play"
+  },
+  {
+    "timestamp": "75:12",
+    "timestamp_seconds": 4512.59,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "Davis the offense of rebound back up and banks at home"
+  },
+  {
+    "timestamp": "75:19",
+    "timestamp_seconds": 4519.389999999999,
+    "player": "Curry",
+    "action": "Rebounding",
+    "description": "I just want to shout but also Davis's rebound advantage Anthony Davis discarded people curry reverse"
+  },
+  {
+    "timestamp": "75:19",
+    "timestamp_seconds": 4519.389999999999,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "I just want to shout but also Davis's rebound advantage Anthony Davis discarded people curry reverse"
+  },
+  {
+    "timestamp": "75:19",
+    "timestamp_seconds": 4519.389999999999,
+    "player": "Anthony Davis",
+    "action": "Rebounding",
+    "description": "I just want to shout but also Davis's rebound advantage Anthony Davis discarded people curry reverse"
+  },
+  {
+    "timestamp": "75:36",
+    "timestamp_seconds": 4536.57,
+    "player": "Curry",
+    "action": "Layup",
+    "description": "Shrooter drives inside Caruso Missed a layup curry the rebound"
+  },
+  {
+    "timestamp": "75:36",
+    "timestamp_seconds": 4536.57,
+    "player": "Caruso",
+    "action": "Layup",
+    "description": "Shrooter drives inside Caruso Missed a layup curry the rebound"
+  },
+  {
+    "timestamp": "76:10",
+    "timestamp_seconds": 4570.370000000001,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "credit to Anthony Davis for not giving up on the play so his effort to try to get to the shooter"
+  },
+  {
+    "timestamp": "76:10",
+    "timestamp_seconds": 4570.370000000001,
+    "player": "Anthony Davis",
+    "action": "Shooting",
+    "description": "credit to Anthony Davis for not giving up on the play so his effort to try to get to the shooter"
+  },
+  {
+    "timestamp": "76:36",
+    "timestamp_seconds": 4596.79,
+    "player": "Davis",
+    "action": "Steal",
+    "description": "This is a tough play to guard the curl by Davis Davis knocked away another steal from Dremon green"
+  },
+  {
+    "timestamp": "76:36",
+    "timestamp_seconds": 4596.79,
+    "player": "Green",
+    "action": "Steal",
+    "description": "This is a tough play to guard the curl by Davis Davis knocked away another steal from Dremon green"
+  },
+  {
+    "timestamp": "76:46",
+    "timestamp_seconds": 4606.39,
+    "player": "Green",
+    "action": "3-Point Shot",
+    "description": "Three steals three blocks for green"
+  },
+  {
+    "timestamp": "76:48",
+    "timestamp_seconds": 4608.87,
+    "player": "Curry",
+    "action": "Driving",
+    "description": "Curry on the drive gets inside fall on jumper no good"
+  },
+  {
+    "timestamp": "76:54",
+    "timestamp_seconds": 4614.2699999999995,
+    "player": "Davis",
+    "action": "Rebounding",
+    "description": "11 rebounds for Davis to go with 21 points"
+  },
+  {
+    "timestamp": "77:05",
+    "timestamp_seconds": 4625.29,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Drives layup shot is good. Oh what a tough shot from Shrooter and Dremon green wanted to push off"
+  },
+  {
+    "timestamp": "77:22",
+    "timestamp_seconds": 4642.45,
+    "player": "Curry",
+    "action": "Passing",
+    "description": "Get's the pass from curry"
+  },
+  {
+    "timestamp": "77:35",
+    "timestamp_seconds": 4655.009999999999,
+    "player": "Green",
+    "action": "3-Point Shot",
+    "description": "And you get it to green and he plays four on three"
+  },
+  {
+    "timestamp": "77:44",
+    "timestamp_seconds": 4664.49,
+    "player": "Curry",
+    "action": "Shooting",
+    "description": "Other guys not named curry making shots being ready and aggressive because the Lakers are forcing curry to get rid of basketball"
+  },
+  {
+    "timestamp": "77:53",
+    "timestamp_seconds": 4673.21,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "Dennis Truder tries drives on Wiggins flips it up shot no good rebound rebound dream on green"
+  },
+  {
+    "timestamp": "77:53",
+    "timestamp_seconds": 4673.21,
+    "player": "Green",
+    "action": "Shooting",
+    "description": "Dennis Truder tries drives on Wiggins flips it up shot no good rebound rebound dream on green"
+  },
+  {
+    "timestamp": "78:05",
+    "timestamp_seconds": 4685.83,
+    "player": "Curry",
+    "action": "Driving",
+    "description": "Curry fakes curry drives floats it up banks at home"
+  },
+  {
+    "timestamp": "78:57",
+    "timestamp_seconds": 4737.07,
+    "player": "Curry",
+    "action": "Scoring",
+    "description": "I think it's the right move absolutely they got to make an adjustment because the Warriors clearing aside for curry"
+  },
+  {
+    "timestamp": "79:17",
+    "timestamp_seconds": 4757.150000000001,
+    "player": "James",
+    "action": "Rebounding",
+    "description": "Wiggins looking to help James four on the 24 James jumper short rebound Matthews back out to James"
+  },
+  {
+    "timestamp": "79:17",
+    "timestamp_seconds": 4757.150000000001,
+    "player": "Wiggins",
+    "action": "Rebounding",
+    "description": "Wiggins looking to help James four on the 24 James jumper short rebound Matthews back out to James"
+  },
+  {
+    "timestamp": "79:24",
+    "timestamp_seconds": 4764.59,
+    "player": "Caruso",
+    "action": "3-Point Shot",
+    "description": "Pasti Caruso corner three side of the backboard and Bayesmore gets the rebound"
+  },
+  {
+    "timestamp": "79:30",
+    "timestamp_seconds": 4770.95,
+    "player": "Wiggins",
+    "action": "Shooting",
+    "description": "Now talked about it earlier Wiggins forcing the brunt that it has shot"
+  },
+  {
+    "timestamp": "80:01",
+    "timestamp_seconds": 4801.17,
+    "player": "Davis",
+    "action": "Shooting",
+    "description": "So pull picks up his third and Anthony Davis will shoot free throws"
+  },
+  {
+    "timestamp": "80:01",
+    "timestamp_seconds": 4801.17,
+    "player": "Anthony Davis",
+    "action": "Shooting",
+    "description": "So pull picks up his third and Anthony Davis will shoot free throws"
+  },
+  {
+    "timestamp": "80:52",
+    "timestamp_seconds": 4852.03,
+    "player": "Davis",
+    "action": "Driving",
+    "description": "Currie on the drives a floater in the paint short Wiggins tips it but right to Davis"
+  },
+  {
+    "timestamp": "80:52",
+    "timestamp_seconds": 4852.03,
+    "player": "Wiggins",
+    "action": "Driving",
+    "description": "Currie on the drives a floater in the paint short Wiggins tips it but right to Davis"
+  },
+  {
+    "timestamp": "85:13",
+    "timestamp_seconds": 5113.53,
+    "player": "James",
+    "action": "Shooting",
+    "description": "Shot clock at six James looking"
+  },
+  {
+    "timestamp": "85:16",
+    "timestamp_seconds": 5116.65,
+    "player": "Caruso",
+    "action": "Driving",
+    "description": "Caruso Caruso on the drive inside"
+  },
+  {
+    "timestamp": "85:29",
+    "timestamp_seconds": 5129.95,
+    "player": "Curry",
+    "action": "Driving",
+    "description": "Curry the drive looking to draw"
+  },
+  {
+    "timestamp": "86:49",
+    "timestamp_seconds": 5209.05,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "top James puts up the three."
+  },
+  {
+    "timestamp": "87:22",
+    "timestamp_seconds": 5242.17,
+    "player": "James",
+    "action": "Rebounding",
+    "description": "James the rebound with 32 seconds"
+  },
+  {
+    "timestamp": "88:22",
+    "timestamp_seconds": 5302.63,
+    "player": "LeBron",
+    "action": "3-Point Shot",
+    "description": "Lebron James with the three"
+  },
+  {
+    "timestamp": "88:22",
+    "timestamp_seconds": 5302.63,
+    "player": "LeBron James",
+    "action": "3-Point Shot",
+    "description": "Lebron James with the three"
+  },
+  {
+    "timestamp": "88:22",
+    "timestamp_seconds": 5302.63,
+    "player": "James",
+    "action": "3-Point Shot",
+    "description": "Lebron James with the three"
+  },
+  {
+    "timestamp": "89:02",
+    "timestamp_seconds": 5342.41,
+    "player": "Dremond",
+    "action": "Shooting",
+    "description": "shot in the face from Dremond"
+  },
+  {
+    "timestamp": "91:12",
+    "timestamp_seconds": 5472.629999999999,
+    "player": "James",
+    "action": "Rebounding",
+    "description": "James with 22 points, 11 rebounds,"
+  }
+]
