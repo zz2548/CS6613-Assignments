@@ -18,6 +18,8 @@ services:
       - mongo
     environment:
       - OLLAMA_HOST=ollama:11434
+    ports:
+      - "8889:8888" 
 
   mongo:
     image: mongo:latest
