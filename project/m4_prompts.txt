@@ -1,0 +1,150 @@
+M4 QUERY AND GENERATION - PROMPTS USED
+======================================================================
+
+QUESTION 1:
+What is attention in transformers and can you provide a python example of how it is used?
+
+FULL PROMPT SENT TO LLM:
+======================================================================
+You are an AI tutor for an Introduction to AI course. Your role is to:
+
+1. Explain concepts progressively from foundational to advanced
+2. Use the prerequisite chain provided to scaffold your explanation
+3. When code examples are requested, provide clear, well-commented Python code
+4. Base all explanations on the course materials provided in the context
+5. Be concise but thorough, focusing on understanding over memorization
+
+Structure your answers as:
+- Start with simpler prerequisite concepts
+- Build up to the main concept
+- Provide examples or code when requested
+- Explain the reasoning and intuition, not just the mechanics
+
+
+CONTEXT FROM COURSE MATERIALS:
+CONCEPTS:
+
+[Transformer] (intermediate)
+Definition: Model using self-attention mechanisms for sequence processing
+
+[Attention Mechanism] (intermediate)
+Definition: Technique allowing models to focus on relevant parts of input
+
+[Self-Attention Mechanism] (intermediate)
+Definition: Mechanism that allows the model to weigh the importance of different parts of the input
+
+COURSE MATERIALS:
+
+[singlehead-self-attention – Engineering AI Agents]
+URL: https://pantelis.github.io/aiml-common/lectures/nlp/transformers/singlehead-self-attention.html
+Span: page_55_1
+Content: singlehead-self-attention – Engineering AI Agents
+Single-head self-attention
+Scaled dot-product self-attention
+In the simple attention mechanism, the attention weights are computed
+deterministically
+from the input context. We call the combination of context-free embedding (eg word2vec) and positional embedding, the input embedding. What we would like to do is to Given the input embedding, the output embedding has no information about the
+data distribution
+that the input token is part of outside the context.
+Lets look at the grammatical structure of the following sentences:
+“I love
+bears
+”
+Subject: I
+Verb: love
+Object: bears
+“She
+bears
+the pain”
+Subject: She
+Verb: bears
+Object: the pain
+“
+Bears
+won the game”
+Subject: Bears
+Verb: won
+Object: the game
+Each sentence above follows a subject-verb-object structure, where the subject performs the action expressed by the verb on the object. You can notice that
+bears
+plays a different function in each sentence: as an object, as a verb, and as a ...
+
+[transformers-intro – Engineering AI Agents]
+URL: https://pantelis.github.io/aiml-common/lectures/nlp/transformers/transformers-intro.html
+Span: page_54
+Content: transformers-intro – Engineering AI Agents
+Transformers and Self-Attention
+For the explanation of decoder-based architectures such as those used by GPT, please see the repo https://github.com/pantelis/femtotransformers and the embedded comments therein. A future version of this section will incorporate the commented source code from that repo as well as
+this popular repo
+that implements various other transformer architectures.
+This is the original encoder-decoder architecture
+As compared to the RNNs we have seen earlier, in the transformer architecture we:
+Eliminate all recurrent connections present in earlier RNN architectures, therefore allowing the model to be trained as well as produce inference results much faster since we dont need to wait for the previous token to be processed. Because we broke the sequential nature of processing the input we need to encode explicitly the order that the token show up in the input context. This is done by adding positional encodings to the input ...
+
+[index – Engineering AI Agents]
+URL: https://pantelis.github.io/aiml-common/lectures/nlp/nmt/rnn-nmt-attention/index.html
+Span: page_52
+Content: index – Engineering AI Agents
+Attention in RNN-based NMT
+When you hear the sentence “the soccer ball is on the field,” you don’t assign the same importance to all 7 words. You primarily take note of the words “
+ball
+” “
+on
+,” and “
+field
+” since those are the words that are most descriptive to you.
+Using the
+final
+RNN hidden state as
+the
+single context vector sequence-to-sequence models cannot differentiate between significant and less significant words. Moreover, different parts of the output need to consider different parts of the input as “important.”
+To address this issue we can simply introduce skip connections - similarly to the ResNet architecture - to the RNN decoder. We can decorate each skip connection with a weight that is learned during training. In the figure below you can see the encoder hidden states combined via a weighted sum with the decoder hidden states.
+```gnleibmndcba Important Notice that if the set of weights that the decoder uses to combine the encoder hidden s...
+
+[Large Language Models – Engineering AI Agents]
+URL: https://pantelis.github.io/book/llm/index.html
+Span: page_36
+Content: Large Language Models – Engineering AI Agents
+Categories
+All
+(22)
+Introduction to Recurrent Neural Networks (RNN)
+Data streams are everywhere in our lives. Weather station sensor data arrive in streams indexed by time, financial trading data and obviously reading comprehension - one can…
+Simple RNN
+The simple RNN architecture with just a single layer of neurons that receive the input
+\(\mathbf{x}\)
+is shown below.
+The Long Short-Term Memory (LSTM) Architecture
+In the simple RNN we have seen the problem of explodig or vanishing gradients when the span of back-propagation is large (large
+\(\tau\)
+). Using the conceptual IIR filter…
+Introduction to NLP Pipelines
+In this chapter, we will introduce the topic of processing with neural architectures language in general. This includes natural language, code etc.
+Language Models
+These notes heavily borrowing from the CS224N set of notes on Language Models.
+RNN-based Neural Machine Translation
+These notes heavily borrowing from the CS229N 2019 s...
+
+STUDENT QUESTION:
+What is attention in transformers and can you provide a python example of how it is used?
+
+YOUR ANSWER:
+
+======================================================================
+
+QUESTION 2:
+What is CLIP and how it is used in computer vision applications?
+
+ERROR: No prompt generated
+Answer: I couldn't find relevant concepts in the course materials for this query.
+
+======================================================================
+
+QUESTION 3:
+Can you explain the variational lower bound and how it relates to Jensen's inequality?
+
+ERROR: No prompt generated
+Answer: I couldn't find relevant concepts in the course materials for this query.
+
+======================================================================
+
