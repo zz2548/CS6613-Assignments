@@ -22,321 +22,180 @@ Structure your answers as:
 
 
 CONTEXT FROM COURSE MATERIALS:
-PREREQUISITE CHAIN (simple → complex):
-  Target Function → Supervised Learning → Transformer
-
 CONCEPTS:
 
-[Neural Network] (intermediate)
-Definition: Computational model inspired by biological neurons
+[Transformer] (intermediate)
+Definition: A model architecture for processing sequential data
 
-[Supervised Learning] (intermediate)
-Definition: Learning from labeled data to predict trajectories
+[Self-Attention] (advanced)
+Definition: Mechanism that allows tokens to adjust their embeddings based on the context of the input sequence
 
-[Target Function] (beginner)
-Definition: Unknown smooth function transforming inputs into outputs
+[Cross Entropy Loss] (intermediate)
+Definition: Loss function used in classification problems, measures the performance of a classification model whose output is a probability value between 0 and 1
 
-[Loss Function] (beginner)
-Definition: Sum-squared error over location, size, objectness, and classification
+[Neural Networks] (intermediate)
+Definition: Model architecture that learns from data through layers of interconnected nodes
 
-[Optimization Algorithm] (intermediate)
-Definition: Algorithm for searching weight space efficiently
+[Attention Mechanism] (advanced)
+Definition: A mechanism that provides the decoder with access to the entire input sequence, allowing it to focus on relevant parts of the input at each decoding step
+
+[Transformer Model] (intermediate)
+Definition: Model architecture using self-attention and feedforward networks
 
 [Cross Entropy] (intermediate)
 Definition: Loss function used in supervised learning problems, equivalent to minimizing KL divergence
 
-[Self-Attention] (intermediate)
-Definition: Mechanism for attending to different positions in the input sequence
+RELATED CONCEPTS (for comprehension/comparison, not required background): Transformer Model, Cross Entropy Loss
 
-[Natural Language Processing] (beginner)
-Definition: Field dealing with text and speech processing
-
-[Attention Mechanism] (intermediate)
-Definition: Mechanism in neural networks that allows models to weigh the importance of different elements in a sequence
-
-[Computer Vision] (intermediate)
-Definition: Field of AI focused on image and video analysis
-
-[Transformer] (intermediate)
-Definition: Model architecture using self-attention mechanisms for sequence processing
+WORKED EXAMPLES:
+  - Character-Level RNN Implementation: Code snippet calculates cross-entropy loss for each character prediction in the model.
+  - Attention Scores Calculation: Calculate attention scores using dot product between vectors, resulting in a 3x3 matrix.
+  - Self-Attention Mechanism Example: Tokens adjust their embeddings based on context, e.g., 'bears' in different sentences.
+  - Selecting Gaussian Model Hypothesis: Calculating log likelihood for two Gaussian models to select the best one.
 
 COURSE MATERIALS:
 
-[Multimodal Reasoning – Engineering AI Agents]
-URL: https://pantelis.github.io/book/multimodal/index.html
-Span: page_152
-Content: Multimodal Reasoning – Engineering AI Agents
-Categories
-All
-(15)
-CLIP Paper
-The CLIP paper, one of the most beautifully written papers in the AI domain, is a must-read just for this reason alone: you can adopt the template for your own papers or…
-Contrastive Language-Image Pretraining (CLIP)
-This is shamelessly copied from the MIT Foundations of Computer Vision Book by Prof. William T. Freeman et al.
-Language Models
-These notes heavily borrowing from the CS224N set of notes on Language Models.
-Multi-head self-attention
-Earlier we have seen examples with the token
-bear
-being in multiple grammatical patterns that also influence its meaning. For example, we have seen the subject-verb-object…
-Single-head self-attention
-In the simple attention mechanism, the attention weights are computed
-deterministically
-from the input context. We call the combination of context-free embedding (eg…
-Transformers and Self-Attention
-For the explanation of decoder-based architectures such as those used by GPT...
+[2pIIPXPopzc]
+URL: https://youtu.be/2pIIPXPopzc
+Timecode: 00:02
+Content: Okay, in this video we will see a new architecture called transformers. Uh it's a relatively recent architecture that has monopolized the last few years uh spaces like natural language processing, computer vision and others. uh and uh in this kind of architecture we're going to start by connecting uh connecting it to uh what we have discussed already uh the context contextf free embeddings such as let's say word tovec and understand how this kind of architecture can actually generate inside it uh representations that are uh called contextual representations and these are actually quite important because at the end of the day you will actually uh can attach to those contextual presentations. Uh downstream tasks or upstream tasks depends on how you see it. And uh these kind of tasks like classification and others are um are going to uh sort of have significantly better performance as compared to what other architectures we have seen already. Uh and also at the same time they will actuall...
 
-[Transfer Learning for Computer Vision Tutorial – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/transfer-learning/transfer_learning_tutorial.html
-Span: page_108_2
-Content: Transfer Learning for Computer Vision Tutorial – Engineering AI Agents
-%
-matplotlib inline
-Author
-:
-Sasank Chilamkurthy <https://chsasank.github.io>
-_
-In this tutorial, you will learn how to train a convolutional neural network for image classification using transfer learning. You can read more about the transfer learning at
-cs231n notes <https://cs231n.github.io/transfer-learning/>
-__
-In practice, very few people train an entire Convolutional Network from scratch (with random initialization), because it is relatively rare to have a dataset of sufficient size. Instead, it is common to pretrain a ConvNet on a very large dataset (e.g. ImageNet, which contains 1.2 million images with 1000 categories), and then use the ConvNet either as an initialization or a fixed feature extractor for the task of interest.
-These two major transfer learning scenarios look as follows:
-Finetuning the convnet
-: Instead of random initialization, we initialize the network with a pretrained network, like the on...
+[Introduction]
+URL: https://aegean.ai/aiml-common/lectures/scene-understanding/scene-understanding-intro
+Span: page_87
+Content: # Introduction
 
-[The Learning Problem – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/learning-problem/index.html
-Span: page_3
-Content: The Learning Problem – Engineering AI Agents
-The Supervised (Inductive) Learning Problem Statement
-Let us start with a classic formal definition of the supervised learning problem.
-learning-problem
-Vapnik’s
-formulation of the learning problem (enhanced with notation from the Deep Learning book)
-The description below is taken from Vadimir Vapnik’s classic book
-Statistical Learing Theory
-, albeit with some enhancements on terminology to make it more in line with our needs.
-The generator is a source of situations that determines the environment in which the target function (he calls it supervisor) and the learning algorithm act. Here we consider the simplest environment: the data generator generates the vectors
-\(\mathbf{x} \in \mathcal{X}\)
-independently and identically distributed (i.i.d.) according to some unknown (but fixed) probability distribution function
-\(p_{data}(\mathbf{x})\)
-.
-The vector
-\(\mathbf x\)
-are inputs to the target function (or operator); the target function returns...
+> Overview of scene understanding tasks, object detection, semantic segmentation, and instance segmentation, and the detection pipeline including region proposals, FCNs, and the COCO dataset.
 
-[Maximum Likelihood (ML) Estimation of conditional models – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/optimization/maximum-likelihood/conditional_maximum_likelihood.html
-Span: page_92
-Content: Maximum Likelihood (ML) Estimation of conditional models – Engineering AI Agents
-The discussion in the marginal distribution is equivalently applicable to the conditional distribution
-\(p_{model}(\mathbf y | \mathbf x, \mathbf w)\)
-which governs supervised learning,
-\(y\)
-being the symbol of the label / target variable. Therefore all machine learning software frameworks offer excellent APIs on CE calculation.
-\[ L(\mathbf w) = - \mathbb{E_{\mathbf x, \mathbf y \sim \hat p_{data}}}  \log p_{model}(\mathbf y | \mathbf x; \mathbf w)\]
-The attractiveness of the ML solution is that the CE (also known as log-loss) is general and we
-don’t need to re-design it
-when we change the model.
-Visualizing the regression function - the conditional mean
-It is now instructive to go over an example to understand that even the plain-old mean squared error (MSE), the objective that is common in the regression setting, falls under the same umbrella - its the cross entropy between
-\(\hat p_{data}\)
-and a Gaus...
+In the previous chapters we have treated the perception subsystem mainly from starting the first principles that govern supervised learning to the deep learning architectures that can be used in computer vision. Now we are synthesizing these algorithms to pipelines that can potentially allow us to decompose the scene into objects. As discussed in the CNN introduction, humans have a unique ability to interpret scenes based on their ability to infer (reason) what they don't see. This is the reason why scene understanding involves far more than just perception. In this chapter we will cover algorithms that allow us to detect and segment objects in the scene.
 
-[index – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/nlp/nlp-introduction/nlp-pipelines/index.html
-Span: page_24
-Content: index – Engineering AI Agents
-Introduction to NLP Pipelines
-In this chapter, we will introduce the topic of processing with neural architectures language in general. This includes natural language, code etc.
-Python and almost all programming languages are formal. They define a strict set of rules called a
-grammar
-that the programmer must follow religiously. In addition formal languages also define semantics or meaning of the program via a set of rules. So the exit code
-0
-after the execution of a routine has the meaning of successful termination but a
-1
-the opposite.
-The English language on the other hand is “free wheeling” so to speak due to its ambiguity and size.
-Some examples are in order:
-Ambiguity
-: “he met his maker”
-Same context, different meaning
-:
-“The food in this restaurant was good, not bad at all”
-“The food in this restaurant was bad, not good at all.”
-Different context alltogether
-:
-“The bank’s profits eroded soon after the 2008 crisis”
-“The river’s bank eroded after the ...
+## Detect objects in an image
 
-[Policy Gradient Algorithms - REINFORCE – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/reinforcement-learning/policy-based-algorithms/reinforce/index.html
-Span: page_81_2
-Content: Policy Gradient Algorithms - REINFORCE – Engineering AI Agents
-Given that RL can be posed as an MDP, in this section we continue with a policy-based algorithm that learns the policy
-directly
-by optimizing the objective function and can then map the states to actions. The algorithm we treat here, called REINFORCE, is important although more modern algorithms do perform better.
-It took its name from the fact that during
-training
-actions that resulted in good outcomes should become more probable—these actions are positively
-reinforced
-. Conversely, actions which resulted in bad outcomes should become less probable. If learning is successful, over the course of many iterations, action probabilities produced by the policy, shift to a distribution that results in good performance in an environment. Action probabilities are changed by following the policy gradient, therefore REINFORCE is known as a
-policy gradient
-algorithm.
-The algorithm needs three components:
-Component
-Description
-Parametr...
+Object detection is demonstrated in this short video clip that shows the end result - placing b...
 
-[Word2Vec Tensorflow Tutorial – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/nlp/nlp-introduction/word2vec/word2vec_tensorflow_tutorial.html
-Span: page_28_9
-Content: Word2Vec Tensorflow Tutorial – Engineering AI Agents
-View on TensorFlow.org
-Run in Google Colab
-View source on GitHub
-Download notebook
-word2vec is not a singular algorithm, rather, it is a family of model architectures and optimizations that can be used to learn word embeddings from large datasets. Embeddings learned through word2vec have proven to be successful on a variety of downstream natural language processing tasks.
-Note: This tutorial is based on
-Efficient estimation of word representations in vector space
-and
-Distributed representations of words and phrases and their compositionality
-. It is not an exact implementation of the papers. Rather, it is intended to illustrate the key ideas.
-These papers proposed two methods for learning representations of words:
-Continuous bag-of-words model
-: predicts the middle word based on surrounding context words. The context consists of a few words before and after the current (middle) word. This architecture is called a bag-of-words model a...
+[RLbook2020.pdf]
+URL: http://incompleteideas.net/book/RLbook2020.pdf
+Span: page_150
+Content: ii
 
-[Finetuning Language Models for Text Classification - Patent Dataset – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/nlp/finetuning/patents/index.html
-Span: page_15_2
-Content: Finetuning Language Models for Text Classification - Patent Dataset – Engineering AI Agents
-Finetuning Language Models for Text Classification - Patent Dataset
-This notebook was submitted by NYU student Sky Achitoff
-Code
-import
-torch
-from
-datasets
-import
-load_dataset
-from
-transformers
-import
-AutoTokenizer, AutoModelForSequenceClassification
-from
-torch.utils.data
-import
-TensorDataset, DataLoader
-from
-torch.nn.utils.rnn
-import
-pad_sequence
-from
-collections
-import
-defaultdict
-import
-random
-import
-logging
-logging.getLogger(
-"transformers.modeling_utils"
-).setLevel(logging.ERROR)
-logging.getLogger(
-"transformers"
-).setLevel(logging.WARNING)
-Code
-tokenizer
-=
-AutoTokenizer.from_pretrained(
-'distilbert-base-uncased'
-)
-model
-=
-AutoModelForSequenceClassification.from_pretrained(
-'distilbert-base-uncased'
-, num_labels
-=
-2
-)
-device
-=
-torch.device(
-'cuda'
-if
-torch.cuda.is_available()
-else
-'cpu'
-)
-model.to(device)
-BATCH_SIZE
-=
-32
-def
-encodeText(text, max_length
-=
-512
-):
-encodedDict
-=
-tokenizer.encod...
+Adaptive Computation and Machine Learning
+Francis Bach, series editor
+A complete list of books published in the Adaptive Computation and Machine Learning
+series appears at the back of this book.
+Reinforcement Learning:
+An Introduction
+second edition
+Richard S. Sutton and Andrew G. Barto
+The MIT Press
+Cambridge, Massachusetts
+London, England
+©2018, 2020 Richard S. Sutton and Andrew G. Barto
+All rights reserved. No part of this book may be reproduced in any form by any electronic
+or mechanical means (including photocopying, recording, or information storage and retrieval)
+without permission in writing from the copyright holder. This work is licensed under the
+Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License. To view a copy
+of this license, visit http://creativecommons.org/licenses/by-nc-nd/2.0/ or send a letter
+to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
+This book was set in 10/12, CMR by Westchester Publishing Services. Printed and bound in...
 
-[Large Language Models – Engineering AI Agents]
-URL: https://pantelis.github.io/book/llm/index.html
-Span: page_171
-Content: Large Language Models – Engineering AI Agents
-Categories
-All
-(22)
-Introduction to Recurrent Neural Networks (RNN)
-Data streams are everywhere in our lives. Weather station sensor data arrive in streams indexed by time, financial trading data and obviously reading comprehension - one can…
-Simple RNN
-The simple RNN architecture with just a single layer of neurons that receive the input
-\(\mathbf{x}\)
-is shown below.
-The Long Short-Term Memory (LSTM) Architecture
-In the simple RNN we have seen the problem of explodig or vanishing gradients when the span of back-propagation is large (large
-\(\tau\)
-). Using the conceptual IIR filter…
-Introduction to NLP Pipelines
-In this chapter, we will introduce the topic of processing with neural architectures language in general. This includes natural language, code etc.
-Language Models
-These notes heavily borrowing from the CS224N set of notes on Language Models.
-RNN-based Neural Machine Translation
-These notes heavily borrowing from the CS229N 2019 s...
+[JdoXFcSiDrA]
+URL: https://youtu.be/JdoXFcSiDrA
+Timecode: 00:06
+Content: So um in this video what we will do is we'll continue our discussion to um towards the direction of implementing uh contextual embeddings and we start from where we stopped last time uh where we actually built a way to actually do that. If you recall uh we had um this kind of a simple self attention mechanism that is actually had this implementing this kind of a very simple kind of a linear equation and uh in this kind of uh sort of discussion what we will do is we first want to motivate why we need to move away from this kind of linear way of calculating this kind of embeddings and uh see exactly where this will lead us. uh so I will call this kind of a second discussion on the self attention kind of mechanism the sort of elaborate [clears throat] or let me not call it elaborate let me call it the sort of probabilistic self attention at the end of the day everything is probabilistic or we'll end up in some kind of a statistical kind of model uh so that kind of discussion is pretty muc...
 
-[Foundations – Engineering AI Agents]
-URL: https://pantelis.github.io/book/foundations/
-Span: page_86
-Content: Foundations – Engineering AI Agents
-Categories
-All
-(11)
-Information Theory
-(1)
-Optimization
-(1)
-Statistical Learning Theory
-(1)
-The Learning Problem
-Statistical Learning Theory
-The supervised learning problem statement.
-Optimization Algorithms
-Optimization
-In this section we close the circle that will allow us to train a model - we need an algorithm that will help us search efficiently in the weight space the optimal vector
-\(\…
-Maximum Likelihood Estimation of Gaussian Parameters
-This text appearred in this post but because the math formatting disappeared from the original site, it is shamelessly copied here. Please note that in our notation
-\(N\)
-is
-…
-Introduction to Classification
-There are three broad classes of methods for determining the parameters
-\(\mathbf{w}\)
-of a linear classifier:
-Logistic Regression
-Logistic regression is used in machine learning extensively - every time we need to provide probabilistic semantics to an outcome e.g. predicting the risk of developing a…
-Entr...
+[PL3ZP40uBnQ]
+URL: https://www.youtube.com/watch?v=PL3ZP40uBnQ
+Timecode: 00:00
+Content: so in this video we actually start uh discussing language models and um as an example for those who are not familiar with with the term um I guess most of you used um a language model in the past every time you are trying to enter a search query in the Google search bar you're using a language model uh you can actually try it right now you can start uh typing what is the and then immediately you can notice that Google is suggesting uh the top guesses or predictions of what Google believes that you are intending to type next so that is a specific version of a language model that is actually called Auto regressive model so the prediction of what's comes next the next token is what we'll be discussing in this uh in this video so a bit more um uh sort of mathematically we actually going to be dealing with the modeling of uh the following uh sort of probability which is the center uh not the center word the the word that actually coming next uh let's call this word WT uh given uh the WT min...
+
+[CYxadbxMZno]
+URL: https://youtu.be/CYxadbxMZno
+Timecode: 00:00
+Content: in this go back to this VAP new block diagram put all probability distributions that we will um need in order for us to do the following uh for every prediction we are going to get out of our machine that prediction should have some form of uncertainty so all the previous discussions we have done up to now in the regression problem uh we were getting a a price let's say of a house um or any kind of real number in our white hats uh now we will have not only just the price of the house but also we have uh an uncertainty of how uncertain our predictions are so most of these machines that are to be useful they need to have that uncertainty output it's quite different to say I'm certain 100% that the house the price of that house will be 350,000 uh but um quite different if you say that yeah there will be 350,000 but uh I'm going to add to it uh Plus plus or minus 100,000 uh into that kind of price so that we will see also in classification and that's why we start now in treating learning a...
+
+[UNet Semantic Segmentation]
+URL: https://aegean.ai/aiml-common/lectures/scene-understanding/semantic-segmentation/unet
+Span: page_53
+Content: # UNet Semantic Segmentation
+
+> Introduction to the UNet architecture for semantic segmentation.
+**Key references**: (Yuan et al., 2019; Ibrahim et al., 2018; Zhao et al., 2019; Cordts et al., 2016; Li et al., 2018)
+Build UNet in PyTorch, DoubleConv, Down, Up, OutConv blocks, Dice + CE loss, Oxford-IIIT Pet segmentation.
+## References
+
+* Cordts, M., Omran, M., Ramos, S., Rehfeld, T., Enzweiler, M., et al. (2016). *The Cityscapes Dataset for Semantic Urban Scene Understanding*.
+* Ibrahim, M., Vahdat, A., Ranjbar, M., Macready, W. (2018). *Semi-Supervised Semantic Image Segmentation with Self-correcting Networks*.
+* Li, Y., Shi, J., Lin, D. (2018). *Low-Latency Video Semantic Segmentation*.
+* Yuan, Y., Chen, X., Chen, X., Wang, J. (2019). *Segmentation Transformer: Object-Contextual Representations for Semantic Segmentation*.
+* Zhao, S., Wang, Y., Yang, Z., Cai, D. (2019). *Region mutual information loss for semantic segmentation*.
+
+***...
+
+[M-bIqxvF984]
+URL: https://youtu.be/M-bIqxvF984
+Timecode: 00:00
+Content: ear video we have seen statistical learning at least in the supervised learning uh approach and we have seen uh linear models for aggression and generalized linear models for classification in this video we are going to expand now to a a type of predictors which are differentiable end to end so we are not going to be requiring just the loss function to be differentiable with respect to the parameters but we also going to be requiring all of the components of this prediction architecture to be differentiable with respect to parameters these predictors are part of what we call the connectionism philosophy uh where we are actually putting together individual units that we'll call sigmoidal neurons that when they are connected together in a proper way that we see exactly what proper means they are exhibiting some I will call it Universal approximation uh properties so let's get started with producing just a single Sig sigmoidal kind of neuron and uh let's for that let's go to the site so t...
+
+[Backpropagation DNN exercises]
+URL: https://aegean.ai/aiml-common/lectures/dnn/backprop-dnn-exercises
+Span: page_40
+Content: # Backpropagation DNN exercises
+
+> Hands-on exercises for understanding backpropagation in deep networks.
+*Computational graph in Tensorboard showing the components involved in a TF BP update*
+
+## Neuron
+## Simple DNN 1
+## Simple DNN 2
+
+A network consist of a concatenation of the following layers
+
+1. Fully Connected layer with input $x^{(1)}$, $W^{(1)}$ and output $z^{(1)}$.
+2. RELU producing $a^{(1)}$
+3. Fully Connected layer with parameters $W^{(2)}$ producing $z^{(2)}$
+4. SOFTMAX producing $\hat{y}$
+5. Cross-Entropy (CE) loss producing $L$
+
+The task of backprop consists of the following steps:
+
+1. Sketch the network and write down the equations for the forward path.
+2. Propagate the backwards path i.e. make sure you write down the expressions of the gradient of the loss with respect to all the network *parameters*.
+
+NOTE: Please note that we have omitted the bias terms for simplicity.
+
+| Forward Pass Step | Symbolic Equation                     |
+| ----------------- | --------------...
+
+[gradient-notes.pdf]
+URL: https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf
+Span: page_148
+Content: Computing Neural Network Gradients
+Kevin Clark
+1 Introduction
+The purpose of these notes is to demonstrate how to quickly compute neural
+network gradients in a completely vectorized way. It is complementary to the
+last part of lecture 3 in CS224n 2019, which goes over the same material.
+2 Vectorized Gradients
+While it is a good exercise to compute the gradient of a neural network with re-
+spect to a single parameter (e.g., a single element in a weight matrix), in practice
+this tends to be quite slow. Instead, it is more ecient to keep everything in ma-
+trix/vector form. The basic building block of vectorized gradients is the Jacobian
+Matrix . Suppose we have a function f:Rn!Rmthat maps a vector of length n
+to a vector of length m:f(x) = [f1(x1;:::;x n);f2(x1;:::;x n);:::;f m(x1;:::;x n)].
+Then its Jacobian is the following mnmatrix:
+@f
+@x=2
+64@f1
+@x1:::@f1
+@xn.........
+@fm
+@x1:::@fm
+@xn3
+75
+That is, (@f
+@x)ij=@fi
+@xj(which is just a standard non-vector derivative). The
+Jacobian matri...
 
 STUDENT QUESTION:
 What is attention in transformers and can you provide a python example of how it is used?
@@ -368,82 +227,64 @@ Structure your answers as:
 CONTEXT FROM COURSE MATERIALS:
 CONCEPTS:
 
-[CLIP Model] (advanced)
-Definition: Model connecting image and text embeddings
+[Vision-Language Model] (intermediate)
+Definition: A model that processes both visual and textual inputs
 
-[Computer Vision] (intermediate)
-Definition: Field of AI focused on image and video analysis
-
-[Contrastive Learning] (advanced)
-Definition: Learning invariant representations using positive and negative pairs
+[Contrastive Learning] (intermediate)
+Definition: Supervising a representation to be invariant to certain transformations by aligning positive pairs and pushing apart negative pairs
 
 COURSE MATERIALS:
 
-[Contrastive Language-Image Pretraining (CLIP) – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/VLM/clip/index.html
-Span: page_144_1
-Content: Contrastive Language-Image Pretraining (CLIP) – Engineering AI Agents
-Note
-This is shamelessly copied from the MIT Foundations of Computer Vision Book by Prof. William T. Freeman et al.
+[Contrastive Language-Image Pretraining (CLIP)]
+URL: https://aegean.ai/aiml-common/lectures/VLM/clip
+Span: page_130
+Content: # Contrastive Language-Image Pretraining (CLIP)
+
+> Contrastive Language-Image Pretraining (CLIP) - lecture notes and code examples.
+At this point, this is shamelessly copied from the [MIT Foundations of Computer Vision Book by Prof. William T. Freeman et al.](https://visionbook.mit.edu/) In the future this page will present the concepts as well as the code that replicates some of the figures in the book.
 Language is a representation of our world and so is perception - both language and vision are trying to solve the same problem.
-We saw in
-?@sec-word2vec
-that a prediction task can be used to learn a representation of a word - recall we are predicting the words that are frequent closeby. This type of task is called a
-pretext task
-. The idea is that if we learn a prediction task that dependents on a representation and our predictions are correct, then we have learned a good representation.
-This is a very general idea and it applies to many different domains. For example, in vision, we can use a pretext task to learn a representation of an image by predicting the pixels in the image. This is called
-self-supervised learning
-because we are using the data itself to supervise the learning process.
-Learning und...
 
-[Detectron2 Beginner’s Tutorial – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/scene-understanding/semantic-segmentation/maskrcnn/pytorch/detectron_tutorial.html
-Span: page_12_1
-Content: Detectron2 Beginner’s Tutorial – Engineering AI Agents
-Welcome to detectron2! This is the official colab tutorial of detectron2. Here, we will go through some basics usage of detectron2, including the following: * Run inference on images or videos, with an existing detectron2 model * Train a detectron2 model on a new dataset
-You can make a copy of this tutorial by “File -> Open in playground mode” and make changes there.
-DO NOT
-request access to this tutorial.
-Install detectron2
-!
-pip install detectron2
-@
-git
-+
-https:
-//
-github.com
-/
-facebookresearch
-/
-detectron2
-@
-7
-c2c8fb
-Looking in indexes: https://pypi.org/simple, https://us-python.pkg.dev/colab-wheels/public/simple/
+We saw in [section](#sec-word2vec) that a prediction task can be used to learn a representation of a word - recall we are predicting the words that are frequent closeby. This type of task is called a **pretext task**. The idea is that if we learn a prediction task that dependents on a representation and our predictions are correct, then we have learned a good representation.
 
-Collecting detectron2@ git+https://github.com/facebookresearch/detectron2@7c2c8fb
+This is a very general idea and it applies to many different domains. For example, i...
 
-  Cloning https://github.com/facebookresearch/detectron2 (to revision 7c2c8fb) to /tmp/pip-install-pvcq_72b/detectron2_47da90cc98fe46b5af32f374caa6e530
+[VLA Agents]
+URL: https://aegean.ai/book/vla-agents
+Span: page_97
+Content: # VLA Agents
 
-  Running command git clone -q https://github.com/facebookresearch/detectron2 /tmp/...
+> Vision-Language-Action agents that combine perception, language understanding, and action for embodied AI and robotics.
+Vision-Language-Action (VLA) agents are multimodal systems that perceive the world through cameras and language instructions, reason over both modalities jointly, and output motor commands or navigation goals. They represent the current frontier of embodied AI, unifying the advances from large language models and vision transformers with robot learning.
 
-[Contrastive Language-Image Pretraining (CLIP) – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/VLM/clip/index.html
-Span: page_144_3
-Content: Contrastive Language-Image Pretraining (CLIP) – Engineering AI Agents
-Note
-This is shamelessly copied from the MIT Foundations of Computer Vision Book by Prof. William T. Freeman et al.
-Language is a representation of our world and so is perception - both language and vision are trying to solve the same problem.
-We saw in
-?@sec-word2vec
-that a prediction task can be used to learn a representation of a word - recall we are predicting the words that are frequent closeby. This type of task is called a
-pretext task
-. The idea is that if we learn a prediction task that dependents on a representation and our predictions are correct, then we have learned a good representation.
-This is a very general idea and it applies to many different domains. For example, in vision, we can use a pretext task to learn a representation of an image by predicting the pixels in the image. This is called
-self-supervised learning
-because we are using the data itself to supervise the learning process.
-Learning und...
+## Core components
+
+A VLA agent integrates three capabilities:
+
+* **Vision**, image or video encoders (Vision Transformers, CLIP) that produce spatial and semantic representations of the robot's environment
+* **Language**, transformer-based language encoders that interpret task instructions, goals, and constraints expressed in natural language
+* **Action**, policy heads that map the joint vision-language embedding to robot actions: end-effector poses, joint velocities, navigation waypoints, or discrete...
+
+[Vision-Language Models]
+URL: https://aegean.ai/aiml-common/lectures/VLM
+Span: page_128
+Content: # Vision-Language Models
+
+> Vision-language models and multimodal AI systems, CLIP and LLaVA.
+
+This chapter covers multimodal AI systems that combine vision and language. We start by presenting a generic view of the
+
+* **CLIP**, the classic image-text alignment model that uses contrastive learning to embed images and captions into a shared space.
+* **LLaVA**, directly combines a vision encoder (CLIP ViT) with a large language model (Llama 2, Vicuna) for instruction-following, dialogue, and vision-language reasoning.
+
+## In this chapter
+Contrastive Language-Image Pretraining, the foundation of modern vision-language models.
+Hands-on section: zero-shot classification as a linear classifier whose weights come from text prompts.
+Large Language and Vision Assistant, instruction-tuned multimodal dialogue.
+**Key references**: (Lu et al., 2016; Johnson et al., 2016; Xu et al., 2015; Vinyals et al., 2016)
+
+## References
+
+* Johnson, J., Hariharan, B., Maaten, L., Fei-Fei, L., Lawrence Zitnick, C...
 
 STUDENT QUESTION:
 What is CLIP and how it is used in computer vision applications?
@@ -475,185 +316,169 @@ Structure your answers as:
 CONTEXT FROM COURSE MATERIALS:
 CONCEPTS:
 
-[Variational Inference] (advanced)
-Definition: Technique for approximating probability distributions in probabilistic models
+[Variational Inference] (intermediate)
+Definition: Method for approximating posterior distributions in probabilistic models
 
-[KL Divergence] (advanced)
-Definition: Measure of difference between two probability distributions
+[Variational Lower Bound (ELBO)] (intermediate)
+Definition: Lower bound on the log-likelihood used in variational inference
+
+[Jensen's Inequality] (advanced)
+Definition: Inequality relating the value of a convex function evaluated at the weighted mean of its arguments to the weighted mean of the function values.
+
+[KL Divergence] (intermediate)
+Definition: Non-negative measure of how one probability distribution diverges from a second, expected probability distribution
 
 COURSE MATERIALS:
 
-[Generative Models – Engineering AI Agents]
-URL: https://pantelis.github.io/book/generative/index.html
-Span: page_153
-Content: Generative Models – Engineering AI Agents
-Categories
-All
-(8)
-Generative Modeling
-In generative modeling we want to model the generative distribution of the observed variables
-\(\mathbf x\)
-,
-\(p(\mathbf x)\)
-1
-.
-The Expectation - Maximization (EM) Algorithm
-See in-person class notes for details. These notes will make it here during Summer 2025.
-VAE Architecture
-In a previous section we have seen that VAE helps us define the latent space. The ‘right’ latent space is the one that makes the distribution
-\(p(\mathbf z| \mathbf \theta)\)
-…
-Variational Inference
-In probabilistic graphical modeling we saw the necessity of latent representations. In this section we advance the topic to the case where we need to learn features that are…
-No matching items...
+[Math for Machine Learning]
+URL: https://aegean.ai/aiml-common/lectures/ml-math
+Span: page_126
+Content: # Math for Machine Learning
 
-[Variational Autoencoder from Scratch - Torch – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/vae/elbo-optimization/elbo_optimization_torch.html
-Span: page_180_1
-Content: Variational Autoencoder from Scratch - Torch – Engineering AI Agents
-"""Trains a variational auto-encoder (VAE) on binarized MNIST using PyTorch.
-The VAE defines a generative model in which a latent code `Z` is sampled from a
-prior `p(Z)`, then used to generate an observation `X` by way of a decoder
-`p(X|Z)`. The full reconstruction follows
-```none
-X ~ p(X)              # A random image from some dataset.
-Z ~ q(Z | X)          # A random encoding of the original image ("encoder").
-Xhat ~ p(Xhat | Z)       # A random reconstruction of the original image
-#   ("decoder").
-```
-To fit the VAE, we assume an approximate representation of the posterior in the
-form of an encoder `q(Z|X)`. We minimize the KL divergence between `q(Z|X)` and
-the true posterior `p(Z|X)`: this is equivalent to maximizing the evidence lower
-bound (ELBO),
-```none
--log p(x)
-= -log int dz p(x|z) p(z)
-= -log int dz q(z|x) p(x|z) p(z) / q(z|x)
-<= int dz q(z|x) (-log[ p(x|z) p(z) / q(z|x) ])   # Jensen's Inequality
-=: KL[q...
+> Mathematical foundations for machine learning including probability, linear algebra, and calculus.
 
-[Word2Vec from scratch – Engineering AI Agents]
-URL: https://pantelis.github.io/aiml-common/lectures/nlp/nlp-introduction/word2vec/word2vec_from_scratch.html
-Span: page_27_4
-Content: Word2Vec from scratch – Engineering AI Agents
-This
-self-contained implementation
-is instructive and you should
-go through it
-to understand the word2vec embedding.
-import
-numpy
-as
-np
-import
-re
-from
-collections
-import
-defaultdict
-class
-word2vec():
-def
-__init__
-(
-self
-):
-self
-.n
-=
-settings[
-'n'
-]
-self
-.eta
-=
-settings[
-'learning_rate'
-]
-self
-.epochs
-=
-settings[
-'epochs'
-]
-self
-.window
-=
-settings[
-'window_size'
-]
-pass
-# GENERATE TRAINING DATA
-def
-generate_training_data(
-self
-, settings, corpus):
-# GENERATE WORD COUNTS
-word_counts
-=
-defaultdict(
-int
-)
-for
-row
-in
-corpus:
-for
-word
-in
-row:
-word_counts[word]
-+=
-1
-self
-.v_count
-=
-len
-(word_counts.keys())
-# GENERATE LOOKUP DICTIONARIES
-self
-.words_list
-=
-sorted
-(
-list
-(word_counts.keys()),reverse
-=
-False
-)
-self
-.word_index
-=
-dict
-((word, i)
-for
-i, word
-in
-enumerate
-(
-self
-.words_list))
-self
-.index_word
-=
-dict
-((i, word)
-for
-i, word
-in
-enumerate
-(
-self
-.words_list))
-training_data
-=
-[]
-# CYCLE THROUGH EACH SENTENCE IN CORPUS
-for
-sentence
-in
-corpus:
-...
+We will go through the key points during the lectures but overall you will benefit from reading the intersecting chapters of [Mathematics for Machine Learning book](https://mml-book.github.io/book/mml-book.pdf).
+***...
+
+[CYxadbxMZno]
+URL: https://youtu.be/CYxadbxMZno
+Timecode: 00:00
+Content: in this go back to this VAP new block diagram put all probability distributions that we will um need in order for us to do the following uh for every prediction we are going to get out of our machine that prediction should have some form of uncertainty so all the previous discussions we have done up to now in the regression problem uh we were getting a a price let's say of a house um or any kind of real number in our white hats uh now we will have not only just the price of the house but also we have uh an uncertainty of how uncertain our predictions are so most of these machines that are to be useful they need to have that uncertainty output it's quite different to say I'm certain 100% that the house the price of that house will be 350,000 uh but um quite different if you say that yeah there will be 350,000 but uh I'm going to add to it uh Plus plus or minus 100,000 uh into that kind of price so that we will see also in classification and that's why we start now in treating learning a...
+
+[Maximum Likelihood Estimation of a Marginal Model]
+URL: https://aegean.ai/aiml-common/lectures/optimization/maximum-likelihood/marginal_maximum_likelihood
+Span: page_23
+Content: # Maximum Likelihood Estimation of a Marginal Model
+
+> Introduction to the Maximum Likelihood principle for estimating probability distributions from data.
+
+Most of the models in supervised machine learning are estimated using the ML principle. In this section we introduce the principle and outline the objective function of the ML estimator that has wide applicability in many learning tasks. Assume that we have $m$ examples drawn from a data generator that generates the vectors $\mathbf{x} \in \mathcal{X}$ *independently and identically distributed (i.i.d.)* according to some unknown (but fixed) probability distribution function $p_{data}(\mathbf{x})$.
+
+$\mathbb{X} = \{ \mathbf{x}_1, \dots, \mathbf{x}_m \}$
+
+Let $p_{model}(\mathbf x, \mathbf w)$ a parametric family of probability distributions (our hypothesis set) over the same space that attempts to approximate (model) $p_{data}(\mathbf{x})$ as closely as possible using a suitable estimate of the parameter vector $\mathbf w$. The ML e...
+
+[VAE architecture]
+URL: https://aegean.ai/aiml-common/lectures/vae/vae-architecture
+Span: page_133
+Content: # VAE architecture
+
+> Encoder-decoder architecture with variational inference and amortized posterior approximation.
+
+In a previous section we have seen that VAE helps us define the latent space. The 'right'  latent space is the one that makes the distribution $p(\mathbf z| \mathbf \theta)$ the most likely to produce $\mathbf x$. We are therefore introducing a stage that complements the aforementioned *generative model or decoder* given by $p(\mathbf x| \mathbf z ; \mathbf \theta) p(\mathbf z | \theta)$.
+
+This stage is called the *recognition model or encoder* and is given by $p(\mathbf z| \mathbf x ; \mathbf \theta)$. The premise is this: the posterior $p(\mathbf z | \mathbf x ; \mathbf \theta)$ will result into a much more meaningful and compact latent space $\mathbf z$ than the prior $p(\mathbf z | \mathbf \theta)$. This encoding though, calls for sampling from a posterior that is itself intractable. We then need to use an approximation to such distribution: $q(\mathbf z| \mathbf x ...
+
+[mml-book.pdf]
+URL: https://mml-book.github.io/book/mml-book.pdf
+Span: page_151
+Content: MATHEMATICS  FOR 
+MACHINE LEAR NING
+Marc Peter Deisenroth
+A. Aldo Faisal
+Cheng Soon On g
+MATHEMATICS FOR MACHINE LEARNING DEISENROTH ET AL.
+The fundamental mathematical tools needed to understand machine 
+learning include linear algebra, analytic geometry, matrix decompositions, vector calculus, optimization, probability and statistics. These topics are traditionally taught in disparate courses, making it hard for data science or computer science students, or professionals, to efﬁ  ciently learn the mathematics. This self-contained textbook bridges the gap between mathematical and machine learning texts, introducing the mathematical concepts with a minimum of prerequisites. It uses these concepts to derive four central machine learning methods: linear regression, principal component analysis, Gaussian mixture models and support vector machines. For students and others with a mathematical background, these derivations provide a starting point to machine learning texts. For those learnin...
+
+[Prerequisites]
+URL: https://aegean.ai/book/prerequisites
+Span: page_121
+Content: # Prerequisites
+
+> Mathematical foundations and programming skills.
+
+This section covers supplementary material including mathematical foundations and programming resources.
+
+## Math Background
+Mathematics for Machine Learning textbook reference.
+Probability basics including joint, marginal, and conditional distributions.
+Linear algebra fundamentals including vectors, matrices, and eigenvalues.
+Calculus fundamentals including derivatives and matrix calculus.
+## Programming
+Python programming resources for data science and ML.
+***...
+
+[Optimization and the ELBO]
+URL: https://aegean.ai/aiml-common/lectures/vae/elbo-optimization
+Span: page_134
+Content: # Optimization and the ELBO
+
+> Derivation of the Evidence Lower Bound from the KL divergence between the inference model and the true posterior, and why maximizing the ELBO jointly trains the encoder and decoder.
+
+The [VAE architecture](/aiml-common/lectures/vae/vae-architecture/index) introduces an inference network $q(\mathbf z | \mathbf x ; \mathbf \phi)$ that approximates the intractable true posterior $p(\mathbf z | \mathbf x ; \mathbf \theta)$. Training jointly the encoder parameters $\mathbf \phi$ and the decoder parameters $\mathbf \theta$ requires an objective that is tractable yet aligned with maximizing the marginal log-likelihood $\log p(\mathbf x ; \mathbf \theta)$. The Evidence Lower Bound (ELBO) is exactly that objective.
+
+## From KL divergence to the ELBO
+
+During the treatment of entropy, we have met the concept of relative entropy or KL divergence that measures the "distance" between two distributions referenced on one of them.
+
+$KL(q \,\|\, p) \;=\; \mathbb{E}_q\!\lef...
+
+[2003.06404.pdf]
+URL: https://arxiv.org/pdf/2003.06404.pdf
+Span: page_161
+Content: 1
+A Survey of End-to-End Driving:
+Architectures and Training Methods
+Ardi Tampuu, Tambet Matiisen, Maksym Semikin, Dmytro Fishman, Naveed Muhammad
+Abstract —Autonomous driving is of great interest to industry
+and academia alike. The use of machine learning approaches
+for autonomous driving has long been studied, but mostly in
+the context of perception. In this paper we take a deeper look
+on the so called end-to-end approaches for autonomous driving,
+where the entire driving pipeline is replaced with a single neural
+network. We review the learning methods, input and output
+modalities, network architectures and evaluation schemes in end-
+to-end driving literature. Interpretability and safety are discussed
+separately, as they remain challenging for this approach. Beyond
+providing a comprehensive overview of existing methods, we
+conclude the review with an architecture that combines the
+most promising elements of the end-to-end autonomous driving
+systems.
+Index Terms —Autonomous driving en...
+
+[Denoising Diffusion Probabilistic Models]
+URL: https://aegean.ai/aiml-common/lectures/diffusion/ddpm
+Span: page_141
+Content: # Denoising Diffusion Probabilistic Models
+
+> Forward and reverse processes, three-step worked example, and the VAE-ELBO derivation of the DDPM training loss.
+
+## Diffusion models at a glance
+
+A denoising diffusion model is built from two coupled Markov chains running in opposite directions over the same set of intermediate states $x_0, x_1, \ldots, x_T$:
+
+* **Forward diffusion process** (fixed). Gradually corrupts a clean data point $x_0$ into pure Gaussian noise $x_T$ by adding a small amount of Gaussian noise at each step. No learned parameters; specified entirely by a noise schedule $\beta_t$. Read it as a stack of **fixed VAE encoders**.
+* **Reverse denoising process** (learnable). Starts from pure noise $x_T \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$ and gradually denoises down to $x_0$. Read it as a stack of **learnable VAE decoders** — but with a single neural network shared across all $T$ timesteps and conditioned on $t$.
+
+Pictorially, both chains run over the same intermediate...
+
+[1906.02691.pdf]
+URL: https://arxiv.org/pdf/1906.02691.pdf
+Span: page_164
+Content: Foundations and TrendsRin Machine Learning
+An Introduction to
+Variational Autoencoders
+Suggested Citation: Diederik P. Kingma and Max Welling (2019), “An Introduction to
+Variational Autoencoders”, Foundations and TrendsRin Machine Learning: Vol. xx, No.
+xx, pp 1–18. DOI: 10.1561/XXXXXXXXX.
+Diederik P. Kingma
+Google
+durk@google.com
+Max Welling
+Universiteit van Amsterdam, Qualcomm
+mwelling@qti.qualcomm.com
+This article may be used only for the purpose of research, teaching,
+and/or private study. Commercial use or systematic downloading
+(by robots or other automatic processes) is prohibited without ex-
+plicit Publisher approval.Boston — DelftarXiv:1906.02691v3  [cs.LG]  11 Dec 2019
+Contents
+1 Introduction 2
+1.1 Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.2 Aim . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 6
+1.3 Probabilistic Models and Variational Inference . . . . . . . 6
+1.4ParameterizingConditionalDistributionswithNeuralNetworks 8
+1.5 Directed Graph...
 
 STUDENT QUESTION:
 Can you explain the variational lower bound and how it relates to Jensen's inequality?

@@ -35,29 +35,29 @@ December 7, 2025
 
 1. Start Docker services:
 ```bash
-docker-compose up -d
+docker compose up -d
 ```
 
-This starts MongoDB (port 27017), Ollama (port 11434), and Jupyter Lab (port 8889).
+This starts MongoDB (port 27017), Ollama (port 11434), and the dev container (Jupyter on host port 8889).
 
 2. Access Jupyter notebook:
-Inside the dev container, run:
+Open a shell inside the dev container, then launch Jupyter:
 ```bash
-jupyter notebook --ip=0.0.0.0 --port=8889 --no-browser --allow-root
+docker compose exec dev bash
+jupyter notebook --ip=0.0.0.0 --port=8888 --no-browser --allow-root
 ```
-Open `http://localhost:8888` in your browser. Use the token from the terminal output to log in.
+Open `http://localhost:8889` in your browser (host port 8889 maps to container port 8888). Use the token from the terminal output to log in.
 
 3. Pull the LLM model (first time only):
 ```bash
-docker exec -it ollama ollama pull qwen2.5:7b
+docker compose exec ollama ollama pull qwen2.5:7b
 ```
 
 ### Running the Notebooks
 
-Execute notebooks in order:
-1. **M2_Complete_Ingestion_Pipeline.ipynb** - Scrapes course website, extracts PDFs/PPTX
-2. **M3_GraphRAG_Construction.ipynb** - Builds knowledge graph from ingested content
-3. **M4_Query_Generation.ipynb** - Tests query processing with 3 required questions
+1. **M2_Complete_Ingestion_Pipeline.ipynb** - Scrapes course website, extracts PDFs/PPTX. **Currently broken**: the course site (`pantelis.github.io`) now permanently redirects to a JS-rendered Mintlify docs site (`aegean.ai`) with a different URL structure, which the BeautifulSoup-based crawler can't parse. Kept for reference only.
+2. **M3_GraphRAG_Construction.ipynb** - Builds knowledge graph from ingested content. Also depends on M2's MongoDB output, so it can't be freshly re-run either.
+3. **M4_Query_Generation.ipynb** - Query processing and answer generation. **This is runnable as-is** against the already-built `knowledge_graph.pkl` committed in this repo; it doesn't require re-running M2/M3. Note that since MongoDB starts empty, the "COURSE MATERIALS" content excerpts it normally pulls per-resource will be skipped (no matching pages in Mongo), so answers lean more on the concept/definition/prerequisite data already stored in the graph itself.
 
 Each notebook is self-contained with setup cells at the beginning.
 
