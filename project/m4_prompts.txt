@@ -22,180 +22,274 @@ Structure your answers as:
 
 
 CONTEXT FROM COURSE MATERIALS:
+PREREQUISITE CHAIN (simple → complex):
+  Sigmoid Function → Neural Networks
+
 CONCEPTS:
 
-[Transformer] (intermediate)
-Definition: A model architecture for processing sequential data
+[Optimization] (intermediate)
+Definition: Process of finding the best solution from all feasible solutions
 
-[Self-Attention] (advanced)
-Definition: Mechanism that allows tokens to adjust their embeddings based on the context of the input sequence
+[Reward Hypothesis] (advanced)
+Definition: The hypothesis that all of one's goals can be described as the pursuit of reward
 
-[Cross Entropy Loss] (intermediate)
-Definition: Loss function used in classification problems, measures the performance of a classification model whose output is a probability value between 0 and 1
+[Transformer Architecture] (advanced)
+Definition: Architecture for natural language processing and computer vision tasks
 
-[Neural Networks] (intermediate)
-Definition: Model architecture that learns from data through layers of interconnected nodes
+[Region Proposal Network (RPN)] (intermediate)
+Definition: Generates region proposals by sliding a convolutional layer over the feature map to detect object regions
 
-[Attention Mechanism] (advanced)
-Definition: A mechanism that provides the decoder with access to the entire input sequence, allowing it to focus on relevant parts of the input at each decoding step
-
-[Transformer Model] (intermediate)
-Definition: Model architecture using self-attention and feedforward networks
+[Logarithm Properties] (beginner)
+Definition: Properties used to simplify logarithmic expressions
 
 [Cross Entropy] (intermediate)
-Definition: Loss function used in supervised learning problems, equivalent to minimizing KL divergence
+Definition: Loss function derived from relative entropy used to compare predicted and actual probability distributions
 
-RELATED CONCEPTS (for comprehension/comparison, not required background): Transformer Model, Cross Entropy Loss
+[Loss Functions] (intermediate)
+Definition: Functions that measure the discrepancy between predicted and actual values, used in training models
+
+[Transformer] (intermediate)
+Definition: Model architecture used for processing sequential data
+
+[Intersection over Union (IoU)] (beginner)
+Definition: Metric used to compare the overlap between a predicted bounding box and a ground truth bounding box
+
+[Neural Networks] (intermediate)
+Definition: Differentiable feed-forward function approximators used in deep learning
+
+[Trial and Error Paradigm] (beginner)
+Definition: Approach where the agent learns through experience, receiving feedback in the form of rewards or penalties without explicit guidance.
+
+[Multiscale Detection] (intermediate)
+Definition: Technique to maintain consistent detection performance across different object scales
+
+[Invertible Transformations with Tractable Jacobian Determinant] (advanced)
+Definition: Techniques for learning transformations from complex distributions to simpler ones, making likelihood computation tractable
+
+[Conditional Probability] (intermediate)
+Definition: The probability of an event given that another event has occurred
+
+[Overfitting] (intermediate)
+Definition: Situation where a model is too complex and captures noise in the training data, leading to poor generalization
+
+[Distribution Shift Problem] (advanced)
+Definition: The challenge of the model responding to situations its own driving leads to, which may not have been seen during training
+
+[Self-Attention] (advanced)
+Definition: Mechanism allowing tokens to adjust their embeddings based on the context of the input sequence
+
+[Attention Mechanism] (advanced)
+Definition: A mechanism that allows the decoder to focus on different parts of the input sequence during each decoding step
+
+[Sigmoid Function] (beginner)
+Definition: Activation function that outputs a value between 0 and 1, often used in binary classification tasks
+
+[Reinforcement Learning] (intermediate)
+Definition: Field of study concerned with how software agents ought to take actions in an environment so as to maximize some notion of cumulative reward.
+
+RELATED CONCEPTS (for comprehension/comparison, not required background): Invertible Transformations with Tractable Jacobian Determinant, Intersection over Union (IoU), Reward Hypothesis, Transformer Architecture, Region Proposal Network (RPN), Logarithm Properties, Trial and Error Paradigm, Multiscale Detection, Conditional Probability, Overfitting, Distribution Shift Problem, Reinforcement Learning
 
 WORKED EXAMPLES:
-  - Character-Level RNN Implementation: Code snippet calculates cross-entropy loss for each character prediction in the model.
-  - Attention Scores Calculation: Calculate attention scores using dot product between vectors, resulting in a 3x3 matrix.
-  - Self-Attention Mechanism Example: Tokens adjust their embeddings based on context, e.g., 'bears' in different sentences.
-  - Selecting Gaussian Model Hypothesis: Calculating log likelihood for two Gaussian models to select the best one.
+  - Attention Score Calculation: Calculate attention scores using dot product between tokens and their transpose.
+  - Self-Play Tic-Tac-Toe: A reinforcement learning algorithm playing against itself to potentially learn a different policy.
+  - Selecting Gaussian Model: Calculating log likelihood for two hypotheses to select the best model.
+  - Image Captioning Model Evaluation: A model based on Transformer achieves higher output accuracy.
+  - Pick-and-Place Robot: Controls robot arm movements with motor voltages as actions, joint angles and velocities as states, and success in picking up objects as reward.
+  - Generate RPN Training Targets: Example showing how to generate targets for training the RPN, including positive and negative anchors.
+  - IoU Calculation Example: Compute IoU between anchors and GT boxes using the `compute_iou` method.
+  - Symmetry in Tic-Tac-Toe: Amending the learning process by taking advantage of symmetries in tic-tac-toe positions.
+  - Polynomial Model with Overfitting and Regularization: Code shows how increasing model complexity leads to better training but worse test performance.
+  - Helicopter Maneuvering: A helicopter performs a maneuver based on trial and error, receiving feedback only at the end of the task.
+  - Training Loop Example: A training loop example showing how to calculate and log different loss components.
+  - Game of Backgammon: An AI learns to play Backgammon by repeatedly playing against itself and adjusting its strategy based on outcomes.
+  - Visualizing Image Batch and Ground Truth Boxes: Code to visualize image batch and ground truth bounding boxes
+  - Watson's DD Bet Calculation: Watson calculates bets using a value function learned from simulated games against human models, then adjusts for risk to optimize winning chances.
+  - Decode Box Predictions: Decodes anchor adjustments into proposal boxes using `decode_boxes` function.
+  - Stanley: The Robot that Won the DARPA Grand Challenge: Stanley used reinforcement learning to navigate autonomously in a challenging off-road environment, demonstrating RL's ability to handle complex tasks.
+  - Investment Portfolio Management: Agent makes decisions about investments to maximize returns over time.
+  - Generate Proposals: Generates object proposals from feature maps and anchors, then filters them with NMS.
+  - Atari Game Playing Agent: Agent learns to play Atari games by trial and error, achieving better scores than humans in many cases.
+  - Neural Machine Translation Example: The text describes a Seq2Seq model with an encoder-decoder architecture using LSTMs and attention to translate sentences.
+  - Simple self-attention mechanism example: Tokens adjust their vector representations based on other tokens' meanings, e.g., 'bears' meaning changes in different sentences.
 
 COURSE MATERIALS:
 
-[2pIIPXPopzc]
-URL: https://youtu.be/2pIIPXPopzc
-Timecode: 00:02
-Content: Okay, in this video we will see a new architecture called transformers. Uh it's a relatively recent architecture that has monopolized the last few years uh spaces like natural language processing, computer vision and others. uh and uh in this kind of architecture we're going to start by connecting uh connecting it to uh what we have discussed already uh the context contextf free embeddings such as let's say word tovec and understand how this kind of architecture can actually generate inside it uh representations that are uh called contextual representations and these are actually quite important because at the end of the day you will actually uh can attach to those contextual presentations. Uh downstream tasks or upstream tasks depends on how you see it. And uh these kind of tasks like classification and others are um are going to uh sort of have significantly better performance as compared to what other architectures we have seen already. Uh and also at the same time they will actuall...
+[Training Faster R-CNN End-to-End]
+URL: https://aegean.ai/aiml-common/lectures/scene-understanding/object-detection/faster-rcnn/pytorch/05_training/05_training
+Span: page_55
+Content: # Training Faster R-CNN End-to-End
 
-[Introduction]
-URL: https://aegean.ai/aiml-common/lectures/scene-understanding/scene-understanding-intro
-Span: page_87
-Content: # Introduction
+> Assemble backbone, FPN, RPN, and ROI head into a full Faster R-CNN module and run a 5-step training demo on COCO data.
+# Training Faster RCNN End-to-End
 
-> Overview of scene understanding tasks, object detection, semantic segmentation, and instance segmentation, and the detection pipeline including region proposals, FCNs, and the COCO dataset.
+*Section 5 of 6 in the Faster RCNN from-scratch series*
 
-In the previous chapters we have treated the perception subsystem mainly from starting the first principles that govern supervised learning to the deep learning architectures that can be used in computer vision. Now we are synthesizing these algorithms to pipelines that can potentially allow us to decompose the scene into objects. As discussed in the CNN introduction, humans have a unique ability to interpret scenes based on their ability to infer (reason) what they don't see. This is the reason why scene understanding involves far more than just perception. In this chapter we will cover algorithms that allow us to detect and segment objects in the scene.
+This section assembles all components (backbone + FPN, RPN, ROI head) into a
+single `FasterRCNN` module and trains it on COCO data streamed from Hugging Face.
 
-## Detect objects in an image
+**Scope**: a short training demo (5 gradient steps) that verifies the full
+forward + backward pass and saves a checkpoint for section 06.
 
-Object detection is demonstrated in this short video clip that shows the end result - placing b...
+**Memory notes**: we use:
 
-[RLbook2020.pdf]
-URL: http://incompleteideas.net/book/RLbook2020.pdf
-Span: page_150
-Content: ii
+* 400 × 400 input resolution (vs the canonical 800 × 800) to fit in \~16 GB VRAM
+* PyTorch AMP (automatic mixed precision), forward in float16, gradients in float32
+* Frozen backbone stem + layer1/2/3 (only layer4, FPN, RPN, ROI head are trained)
 
-Adaptive Computation and Machine Learning
-Francis Bach, series editor
-A complete list of books published in the Adaptive Computation and Machine Learning
-series appears at the back of this book.
-Reinforcement Learning:
-An Introduction
-second edition
-Richard S. Sutton and Andrew G. Barto
-The MIT Press
-Cambridge, Massachusetts
-London, England
-©2018, 2020 Richard S. Sutton and Andrew G. Barto
-All rights reserved. No part of this book may be reproduced in any form by any electronic
-or mechanical means (including photocopying, recording, or information storage and retrieval)
-without permission in writing from the copyright holder. This work is licensed under the
-Creative Commons Attribution-NonCommercial-NoDerivs 2.0 Generic License. To view a copy
-of this license, visit http://creativecommons.org/licenses/by-nc-nd/2.0/ or send a letter
-to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
-This book was set in 10/12, CMR by Westchester Publishing Services. Printed and bound in...
+```python theme={null}
+import sys, os, pathlib
+# Locate frcnn_common.py, works whether run via papermill or interactively
+_nb_candidates = [
+    pathlib.Path.cwd().parent,  # in...
 
-[JdoXFcSiDrA]
-URL: https://youtu.be/JdoXFcSiDrA
-Timecode: 00:06
-Content: So um in this video what we will do is we'll continue our discussion to um towards the direction of implementing uh contextual embeddings and we start from where we stopped last time uh where we actually built a way to actually do that. If you recall uh we had um this kind of a simple self attention mechanism that is actually had this implementing this kind of a very simple kind of a linear equation and uh in this kind of uh sort of discussion what we will do is we first want to motivate why we need to move away from this kind of linear way of calculating this kind of embeddings and uh see exactly where this will lead us. uh so I will call this kind of a second discussion on the self attention kind of mechanism the sort of elaborate [clears throat] or let me not call it elaborate let me call it the sort of probabilistic self attention at the end of the day everything is probabilistic or we'll end up in some kind of a statistical kind of model uh so that kind of discussion is pretty muc...
+[Faster R-CNN Inference Pipeline]
+URL: https://aegean.ai/aiml-common/lectures/scene-understanding/object-detection/faster-rcnn/pytorch/06_inference/06_inference
+Span: page_44
+Content: # Faster R-CNN Inference Pipeline
 
-[PL3ZP40uBnQ]
-URL: https://www.youtube.com/watch?v=PL3ZP40uBnQ
+> Load the 5-step checkpoint, run inference on COCO validation images, visualise RPN proposals and detections, measure latency, and count detections above threshold.
+# Faster RCNN Inference Pipeline
+
+*Section 6 of 6 in the Faster RCNN from-scratch series*
+
+We load the checkpoint saved in section 05, run inference on COCO validation
+images streamed from Hugging Face, and visualise detections.
+
+Topics covered:
+
+* Loading and verifying a checkpoint
+* Running `model.eval()` forward pass (proposal generation + postprocessing)
+* Visualising class-agnostic proposals and final detections
+* Measuring per-image inference latency
+* Pseudo-evaluation: counting detections above a confidence threshold
+**Expected outcome after 5-step training**: the checkpoint from section 05 is a
+  *sanity-check* model, not a trained detector. Expect **zero or very few final
+  detections** above the 0.05 score threshold, the ROI classifier has seen only
+  5 images and its weights a...
+
+[InvitationToImitation_3_1415.pdf]
+URL: https://www.ri.cmu.edu/pub_files/2015/3/InvitationToImitation_3_1415.pdf
+Span: page_147
+Content: An Invitation to Imitation
+J. Andrew Bagnell
+March 15,2015 J. A. Bagnell is an associate professor
+at the Robotics Institute and Machine
+Learning Department at Carnegie
+Mellon University.Imitation learning is the study of algorithms that attempt to improve
+performance by mimicking a teacher’s decisions and behaviors. Such
+techniques promise to enable effective “programming by demonstra-
+tion” to automate tasks, such as driving, that people can demonstrate
+but ﬁnd difﬁcult to hand program. This work represents a summary
+from a very personal perspective of research on computationally ef-
+fective methods for learning to imitate behavior. I intend it to serve
+two audiences: to engage machine learning experts in the challenges of
+imitation learning and the interesting theoretical and practical distinc-
+tions with more familiar frameworks like statistical supervised learning
+theory; and equally, to make the frameworks and tools available for
+imitation learning more broadly appreciated by rob...
+
+[Maximum Likelihood Estimation of Gaussian Parameters]
+URL: https://aegean.ai/aiml-common/lectures/optimization/maximum-likelihood/mle-gaussian-parameters
+Span: page_24
+Content: # Maximum Likelihood Estimation of Gaussian Parameters
+
+> Deriving maximum likelihood estimates for the mean and variance of a Gaussian distribution.
+
+This text appearred in [this post](https://jrmeyer.github.io/machinelearning/2017/08/18/mle.html) but because the math formatting disappeared from the original site,  it is shamelessly copied here. Please note that in our notation $N$ is $m$ (number of examples / samples) and $n$ is $i$ (index of each example / sample).
+
+## The Big Picture
+
+[Maximum Likelihood Estimation](https://en.wikipedia.org/wiki/Maximum_likelihood_estimation) (MLE) is a tool we use in machine learning to acheive a *very* common goal. The goal is to create a statistical model, which is able to perform some task on *yet unseen data*.
+
+The task might be [classification](https://en.wikipedia.org/wiki/Statistical_classification), [regression](https://en.wikipedia.org/wiki/Regression_analysis), or something else, so the nature of the task does not define MLE. The definin...
+
+[Large Language Models]
+URL: https://aegean.ai/book/llms
+Span: page_10
+Content: # Large Language Models
+
+> From recurrent neural networks to transformer architectures and large language models.
+
+Natural language processing enables AI agents to understand and generate human language. This chapter covers the evolution from classical NLP techniques to modern transformer-based large language models.
+
+## Topics
+Text processing pipelines and word embeddings (word2vec).
+Recurrent neural networks for sequence modeling and the challenges of learning long-term dependencies.
+Long Short-Term Memory networks with gates for controlling information flow.
+Statistical and neural language models for text generation.
+Sequence-to-sequence models and encoder-decoder architectures.
+Self-attention mechanisms that enable parallel processing and capture long-range dependencies.
+## Key Concepts
+
+* **Word Embeddings**: Dense vector representations of tokens (word2vec, GloVe)
+* **Sequence Modeling**: Processing variable-length input sequences
+* **Recurrence**: Hidden state evolution for capt...
+
+[bwjOOzFSo9c]
+URL: https://www.youtube.com/watch?v=bwjOOzFSo9c
+Timecode: 00:01
+Content: so in this uh in this video we will uh visit some of the perhaps the most important rules of probability and we will kind of try to derive them experiment this experiment involves two errors or containers you want to call it okay so this is the two containers i will call this container zero and container one and these containers they have inside some widgets balls or whatever i will use these symbols for you know they have six of these widgets and two of those widgets this container zero and container one has this widget and three of those okay two types of widgets okay so you can uh so so the experiment goes as follows okay so this is the experiment the first stage of the experiment involves uh two uh a peak randomly a container or error um and the second part of the experiment is after you selected the container uh you uh you pick um you sample one of those widgets out of that container you select your sample not select your sample and object widget uh out of this container with repl...
+
+[P18-1238.pdf]
+URL: https://www.aclweb.org/anthology/P18-1238.pdf
+Span: page_159
+Content: Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Long Papers) , pages 2556–2565
+Melbourne, Australia, July 15 - 20, 2018. c2018 Association for Computational Linguistics2556Conceptual Captions: A Cleaned, Hypernymed, Image Alt-text Dataset
+For Automatic Image Captioning
+Piyush Sharma, Nan Ding, Sebastian Goodman, Radu Soricut
+Google AI
+Venice, CA 90291
+fpiyushsharma,dingnan,seabass,rsoricut g@google.com
+Abstract
+We present a new dataset of image caption
+annotations, Conceptual Captions, which
+contains an order of magnitude more im-
+ages than the MS-COCO dataset (Lin et al.,
+2014) and represents a wider variety of
+both images and image caption styles. We
+achieve this by extracting and ﬁltering im-
+age caption annotations from billions of
+webpages. We also present quantitative
+evaluations of a number of image cap-
+tioning models and show that a model
+architecture based on Inception-ResNet-
+v2 (Szegedy et al., 2016) for image-feature
+extraction and...
+
+[Object Detection and Semantic Segmentation Metrics]
+URL: https://aegean.ai/aiml-common/lectures/scene-understanding/object-detection/detection-metrics
+Span: page_65
+Content: # Object Detection and Semantic Segmentation Metrics
+
+In this section we provide some intuition as to why we need additional metrics for detection and segmentation of objects.  As shown below such metrics are routinely used to compare various networks and approaches and manifest the progress that was made in the field over the last few years.
+## What is the Average Precision (AP) metric
+
+The AP is the approximation of the Area Under the Curve (AUC). This approximation involves interpolation that eliminates the noisy Precision vs Recall curve - effectively converting this curve to a monotonic curve. This is shown next.
+
+### Example of calculating AP
+
+The following example is based on  [here](https://www.mdpi.com/2079-9292/10/3/279) and [its corresponding implementation](https://github.com/rafaelpadilla/review_object_detection_metrics)
+
+Considering the set of 12 images in the figure below:
+Each image, except (a), (g), and (j), has at least one target object of the class *cat*, whose loca...
+
+[4WHFcqq1ErA]
+URL: https://youtu.be/4WHFcqq1ErA
 Timecode: 00:00
-Content: so in this video we actually start uh discussing language models and um as an example for those who are not familiar with with the term um I guess most of you used um a language model in the past every time you are trying to enter a search query in the Google search bar you're using a language model uh you can actually try it right now you can start uh typing what is the and then immediately you can notice that Google is suggesting uh the top guesses or predictions of what Google believes that you are intending to type next so that is a specific version of a language model that is actually called Auto regressive model so the prediction of what's comes next the next token is what we'll be discussing in this uh in this video so a bit more um uh sort of mathematically we actually going to be dealing with the modeling of uh the following uh sort of probability which is the center uh not the center word the the word that actually coming next uh let's call this word WT uh given uh the WT min...
+Content: so now we are going to expand uh Beyond metrics and actually start covering the U various kind of object detections detectors that we actually see and we can actually broadly categorize them actually shown in this picture as kind of a single stage or a two stage detectors and there's a kind of a trade-off between the two uh the U single stage detectors are actually typically simpler uh and they are more appropriate for um Target devices uh such as smartphones uh and other kind of lower power devices and they are quite efficient in what they do however in terms of performance they're not really as performant as the two- stage detectors and so the two uh here we are going to be focusing on two stage detectors and we are going to be uh treating uh the So-Cal region based uh family of object detectors and that will take us uh all the way from rcnn faster CNN faster rcnn uh and uh and this is basically faster RN is also the um last kind of object detector we're going to see that it is almos...
 
-[CYxadbxMZno]
-URL: https://youtu.be/CYxadbxMZno
-Timecode: 00:00
-Content: in this go back to this VAP new block diagram put all probability distributions that we will um need in order for us to do the following uh for every prediction we are going to get out of our machine that prediction should have some form of uncertainty so all the previous discussions we have done up to now in the regression problem uh we were getting a a price let's say of a house um or any kind of real number in our white hats uh now we will have not only just the price of the house but also we have uh an uncertainty of how uncertain our predictions are so most of these machines that are to be useful they need to have that uncertainty output it's quite different to say I'm certain 100% that the house the price of that house will be 350,000 uh but um quite different if you say that yeah there will be 350,000 but uh I'm going to add to it uh Plus plus or minus 100,000 uh into that kind of price so that we will see also in classification and that's why we start now in treating learning a...
+[Planning Pipeline Types]
+URL: https://aegean.ai/aiml-common/lectures/planning/local-planning
+Span: page_117
+Content: # Planning Pipeline Types
 
-[UNet Semantic Segmentation]
-URL: https://aegean.ai/aiml-common/lectures/scene-understanding/semantic-segmentation/unet
-Span: page_53
-Content: # UNet Semantic Segmentation
+> Planning in stochastic, partially observed environments.
 
-> Introduction to the UNet architecture for semantic segmentation.
-**Key references**: (Yuan et al., 2019; Ibrahim et al., 2018; Zhao et al., 2019; Cordts et al., 2016; Li et al., 2018)
-Build UNet in PyTorch, DoubleConv, Down, Up, OutConv blocks, Dice + CE loss, Oxford-IIIT Pet segmentation.
-## References
+In this section we cover local planning in environments which are stochastic and partially observed.  The discussion is focused on mobile platforms such as autonomous cars.
+*Example of an agent (Udacity's CARLA serf-driving car) in the late 2010s*
+There are [two main schools of thought](https://arxiv.org/pdf/2003.06404.pdf) in designing local planning systems for autonomous cars:
 
-* Cordts, M., Omran, M., Ramos, S., Rehfeld, T., Enzweiler, M., et al. (2016). *The Cityscapes Dataset for Semantic Urban Scene Understanding*.
-* Ibrahim, M., Vahdat, A., Ranjbar, M., Macready, W. (2018). *Semi-Supervised Semantic Image Segmentation with Self-correcting Networks*.
-* Li, Y., Shi, J., Lin, D. (2018). *Low-Latency Video Semantic Segmentation*.
-* Yuan, Y., Chen, X., Chen, X., Wang, J. (2019). *Segmentation Transformer: Object-Contextual Representations for Semantic Segmentation*.
-* Zhao, S., Wang, Y., Yang, Z., Cai, D. (2019). *Region mutual information loss for semantic segmentation*.
-
-***...
-
-[M-bIqxvF984]
-URL: https://youtu.be/M-bIqxvF984
-Timecode: 00:00
-Content: ear video we have seen statistical learning at least in the supervised learning uh approach and we have seen uh linear models for aggression and generalized linear models for classification in this video we are going to expand now to a a type of predictors which are differentiable end to end so we are not going to be requiring just the loss function to be differentiable with respect to the parameters but we also going to be requiring all of the components of this prediction architecture to be differentiable with respect to parameters these predictors are part of what we call the connectionism philosophy uh where we are actually putting together individual units that we'll call sigmoidal neurons that when they are connected together in a proper way that we see exactly what proper means they are exhibiting some I will call it Universal approximation uh properties so let's get started with producing just a single Sig sigmoidal kind of neuron and uh let's for that let's go to the site so t...
-
-[Backpropagation DNN exercises]
-URL: https://aegean.ai/aiml-common/lectures/dnn/backprop-dnn-exercises
-Span: page_40
-Content: # Backpropagation DNN exercises
-
-> Hands-on exercises for understanding backpropagation in deep networks.
-*Computational graph in Tensorboard showing the components involved in a TF BP update*
-
-## Neuron
-## Simple DNN 1
-## Simple DNN 2
-
-A network consist of a concatenation of the following layers
-
-1. Fully Connected layer with input $x^{(1)}$, $W^{(1)}$ and output $z^{(1)}$.
-2. RELU producing $a^{(1)}$
-3. Fully Connected layer with parameters $W^{(2)}$ producing $z^{(2)}$
-4. SOFTMAX producing $\hat{y}$
-5. Cross-Entropy (CE) loss producing $L$
-
-The task of backprop consists of the following steps:
-
-1. Sketch the network and write down the equations for the forward path.
-2. Propagate the backwards path i.e. make sure you write down the expressions of the gradient of the loss with respect to all the network *parameters*.
-
-NOTE: Please note that we have omitted the bias terms for simplicity.
-
-| Forward Pass Step | Symbolic Equation                     |
-| ----------------- | --------------...
-
-[gradient-notes.pdf]
-URL: https://web.stanford.edu/class/cs224n/readings/gradient-notes.pdf
-Span: page_148
-Content: Computing Neural Network Gradients
-Kevin Clark
-1 Introduction
-The purpose of these notes is to demonstrate how to quickly compute neural
-network gradients in a completely vectorized way. It is complementary to the
-last part of lecture 3 in CS224n 2019, which goes over the same material.
-2 Vectorized Gradients
-While it is a good exercise to compute the gradient of a neural network with re-
-spect to a single parameter (e.g., a single element in a weight matrix), in practice
-this tends to be quite slow. Instead, it is more ecient to keep everything in ma-
-trix/vector form. The basic building block of vectorized gradients is the Jacobian
-Matrix . Suppose we have a function f:Rn!Rmthat maps a vector of length n
-to a vector of length m:f(x) = [f1(x1;:::;x n);f2(x1;:::;x n);:::;f m(x1;:::;x n)].
-Then its Jacobian is the following mnmatrix:
-@f
-@x=2
-64@f1
-@x1:::@f1
-@xn.........
-@fm
-@x1:::@fm
-@xn3
-75
-That is, (@f
-@x)ij=@fi
-@xj(which is just a standard non-vector derivative). The
-Jacobian matri...
+| Approach            | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              ...
 
 STUDENT QUESTION:
 What is attention in transformers and can you provide a python example of how it is used?
@@ -227,11 +321,17 @@ Structure your answers as:
 CONTEXT FROM COURSE MATERIALS:
 CONCEPTS:
 
-[Vision-Language Model] (intermediate)
-Definition: A model that processes both visual and textual inputs
-
 [Contrastive Learning] (intermediate)
-Definition: Supervising a representation to be invariant to certain transformations by aligning positive pairs and pushing apart negative pairs
+Definition: Supervising a representation to be invariant to certain transformations, resulting in compressed representations
+
+[PCA (Principal Component Analysis)] (intermediate)
+Definition: Dimensionality reduction technique used to project high-dimensional data into a lower-dimensional space
+
+RELATED CONCEPTS (for comprehension/comparison, not required background): PCA (Principal Component Analysis)
+
+WORKED EXAMPLES:
+  - PCA Projection Example: Visualization code showing text classifier weights and image embedding projected into a 2D space using PCA.
+  - Classifying Images with CLIP: Embed sentences and images, then predict class based on closest embedding.
 
 COURSE MATERIALS:
 
@@ -248,21 +348,28 @@ We saw in [section](#sec-word2vec) that a prediction task can be used to learn a
 
 This is a very general idea and it applies to many different domains. For example, i...
 
-[VLA Agents]
-URL: https://aegean.ai/book/vla-agents
-Span: page_97
-Content: # VLA Agents
+[CLIP Zero-Shot Classification]
+URL: https://aegean.ai/aiml-common/lectures/VLM/clip/zero-shot
+Span: page_131
+Content: # CLIP Zero-Shot Classification
 
-> Vision-Language-Action agents that combine perception, language understanding, and action for embodied AI and robotics.
-Vision-Language-Action (VLA) agents are multimodal systems that perceive the world through cameras and language instructions, reason over both modalities jointly, and output motor commands or navigation goals. They represent the current frontier of embodied AI, unifying the advances from large language models and vision transformers with robot learning.
+> Zero-shot classification as a linear classifier whose weights come from text prompts, with PCA visualization of the shared CLIP embedding space.
+# Zero-shot classification as a linear classifier (CLIP)
 
-## Core components
+This section demonstrates that zero-shot classification with CLIP can be interpreted as a **linear classifier whose weights are generated from text prompts**. We follow the notation used on the [CLIP lecture](/aiml-common/lectures/VLM/clip/index) page: $\boldsymbol\ell$ for images, $\mathbf{t}$ for text, $f_\ell$ and $f_t$ for the two encoders, and $\mathbf{z}_\ell = f_\ell(\boldsymbol\ell)$, $\mathbf{z}_t = f_t(\mathbf{t})$ for the embeddings.
 
-A VLA agent integrates three capabilities:
+You will:
 
-* **Vision**, image or video encoders (Vision Transformers, CLIP) that produce spatial and semantic representations of the robot's environment
-* **Language**, transformer-based language encoders that interpret task instructions, goals, and constraints expressed in natural language
-* **Action**, policy heads that map the joint vision-language embedding to robot actions: end-effector poses, joint velocities, navigation waypoints, or discrete...
+1. Derive the formulation
+2. Implement zero-shot classification
+3. Visualize the text classifier weights and the image in the shared embedding space
+
+## 1. Derivation
+
+CLIP learns two encoders (see the [CLIP lecture](/aiml-common/lectures/VLM/clip/index) for the contrastive training objective):
+
+$$
+\...
 
 [Vision-Language Models]
 URL: https://aegean.ai/aiml-common/lectures/VLM
@@ -314,105 +421,107 @@ Structure your answers as:
 
 
 CONTEXT FROM COURSE MATERIALS:
+PREREQUISITE CHAIN (simple → complex):
+  Stochastic Optimization → Deep Latent Variable Models → Evidence Lower Bound (ELBO)
+  Sum Rule → Variational Inference
+  Negative Log-Likelihood → KL Divergence
+
 CONCEPTS:
+
+[Ordered Basis] (beginner)
+Definition: A set of vectors that define a coordinate system in a vector space
 
 [Variational Inference] (intermediate)
 Definition: Method for approximating posterior distributions in probabilistic models
 
-[Variational Lower Bound (ELBO)] (intermediate)
-Definition: Lower bound on the log-likelihood used in variational inference
+[Evidence Lower Bound (ELBO)] (intermediate)
+Definition: Evidence Lower BOund, used as an objective function in VAEs for optimizing the generative and inference models
 
-[Jensen's Inequality] (advanced)
-Definition: Inequality relating the value of a convex function evaluated at the weighted mean of its arguments to the weighted mean of the function values.
+[Stochastic Optimization] (intermediate)
+Definition: Optimization procedure that uses minibatch sampling and random noise for parameter updates
+
+[EM Algorithm] (intermediate)
+Definition: Iterative algorithm for finding maximum likelihood or maximum a posteriori (MAP) estimates of parameters in statistical models
 
 [KL Divergence] (intermediate)
-Definition: Non-negative measure of how one probability distribution diverges from a second, expected probability distribution
+Definition: Measure of difference between two probability distributions, used to connect negative log likelihood and cross entropy in optimization
+
+[Unscented Transform] (intermediate)
+Definition: Method to approximate integrals without requiring gradients
+
+[Gaussian Process Classification] (advanced)
+Definition: A technique involving latent functions as priors
+
+[Vector Calculus] (intermediate)
+Definition: Concepts about gradients used in optimization
+
+[Gaussian Noise] (beginner)
+Definition: Random variable following a normal distribution
+
+[Soft Margin Support Vector Machine] (intermediate)
+Definition: Optimization problem for finding the hyperplane that maximally separates classes with slack variables
+
+[Akaike Information Criterion (AIC)] (intermediate)
+Definition: Corrects for the bias of maximum likelihood estimator by adding a penalty term
+
+[Deep Latent Variable Models] (intermediate)
+Definition: Latent variable models parameterized by neural networks
+
+[Independent Component Analysis (ICA)] (intermediate)
+Definition: Technique for blind-source separation and non-Gaussian independent sources extraction
+
+[Ancestral Sampling] (beginner)
+Definition: Sampling process where latent variables are sampled one by one according to their topological order in the model
+
+[Forward Process] (intermediate)
+Definition: The process of gradually corrupting data by adding Gaussian noise.
+
+[Jensen's Inequality] (advanced)
+Definition: Inequality relating the value of a convex function of an integral to the integral of the function
+
+[Negative Log-Likelihood] (intermediate)
+Definition: Loss function used to estimate parameters by minimizing the negative log-likelihood of the data
+
+[Pseudo-Inverse] (intermediate)
+Definition: Generalized inverse of a matrix, useful for solving non-square systems
+
+[Sum Rule] (intermediate)
+Definition: Rule for calculating the probability distribution of a random variable by summing over all possible values of another related random variable.
+
+[Variational Lower Bound] (advanced)
+Definition: Lower bound on the log-likelihood used in variational inference
+
+[Rank-Nullity Theorem] (advanced)
+Definition: dim(ker(Φ)) + dim(Im(Φ)) = dim(V)
+
+[Matrix Multiplication] (beginner)
+Definition: Operation that combines two matrices into a single matrix
+
+RELATED CONCEPTS (for comprehension/comparison, not required background): Soft Margin Support Vector Machine, Akaike Information Criterion (AIC), Ordered Basis, Unscented Transform, Independent Component Analysis (ICA), Ancestral Sampling, Forward Process, Negative Log-Likelihood, Pseudo-Inverse, EM Algorithm, Gaussian Process Classification, Variational Lower Bound, Rank-Nullity Theorem, Vector Calculus, Gaussian Noise, Matrix Multiplication
+
+WORKED EXAMPLES:
+  - Mango Bag Problem: Bayes' theorem is used to compute the probability of a mango coming from bag 2 given that it was picked.
+  - Gaussian Likelihood Example: Rewriting negative log-likelihood for Gaussian likelihoods and showing it reduces to a least-squares problem.
+  - Basis Change Example: Transforming a 2x2 matrix into a diagonal form by changing the basis.
 
 COURSE MATERIALS:
 
-[Math for Machine Learning]
-URL: https://aegean.ai/aiml-common/lectures/ml-math
-Span: page_126
-Content: # Math for Machine Learning
+[Video Library]
+URL: https://aegean.ai/media
+Span: page_104
+Content: # Video Library
 
-> Mathematical foundations for machine learning including probability, linear algebra, and calculus.
+> Browse video lectures on AI, computer vision, NLP, and robotics.
 
-We will go through the key points during the lectures but overall you will benefit from reading the intersecting chapters of [Mathematics for Machine Learning book](https://mml-book.github.io/book/mml-book.pdf).
+Subscribe to our [YouTube channel](https://www.youtube.com/@pantelism) for updates.
+Course introductions, statistical learning, and math prerequisites
+Dense networks, CNNs, and RNNs
+Object detection, probabilistic reasoning, and tracking
+Tokenization, embeddings, language models, and transformers
+Propositional logic, knowledge bases, and theorem proving
+Task planning, MDPs, and reinforcement learning
+Development environment and robotics projects
 ***...
-
-[CYxadbxMZno]
-URL: https://youtu.be/CYxadbxMZno
-Timecode: 00:00
-Content: in this go back to this VAP new block diagram put all probability distributions that we will um need in order for us to do the following uh for every prediction we are going to get out of our machine that prediction should have some form of uncertainty so all the previous discussions we have done up to now in the regression problem uh we were getting a a price let's say of a house um or any kind of real number in our white hats uh now we will have not only just the price of the house but also we have uh an uncertainty of how uncertain our predictions are so most of these machines that are to be useful they need to have that uncertainty output it's quite different to say I'm certain 100% that the house the price of that house will be 350,000 uh but um quite different if you say that yeah there will be 350,000 but uh I'm going to add to it uh Plus plus or minus 100,000 uh into that kind of price so that we will see also in classification and that's why we start now in treating learning a...
-
-[Maximum Likelihood Estimation of a Marginal Model]
-URL: https://aegean.ai/aiml-common/lectures/optimization/maximum-likelihood/marginal_maximum_likelihood
-Span: page_23
-Content: # Maximum Likelihood Estimation of a Marginal Model
-
-> Introduction to the Maximum Likelihood principle for estimating probability distributions from data.
-
-Most of the models in supervised machine learning are estimated using the ML principle. In this section we introduce the principle and outline the objective function of the ML estimator that has wide applicability in many learning tasks. Assume that we have $m$ examples drawn from a data generator that generates the vectors $\mathbf{x} \in \mathcal{X}$ *independently and identically distributed (i.i.d.)* according to some unknown (but fixed) probability distribution function $p_{data}(\mathbf{x})$.
-
-$\mathbb{X} = \{ \mathbf{x}_1, \dots, \mathbf{x}_m \}$
-
-Let $p_{model}(\mathbf x, \mathbf w)$ a parametric family of probability distributions (our hypothesis set) over the same space that attempts to approximate (model) $p_{data}(\mathbf{x})$ as closely as possible using a suitable estimate of the parameter vector $\mathbf w$. The ML e...
-
-[VAE architecture]
-URL: https://aegean.ai/aiml-common/lectures/vae/vae-architecture
-Span: page_133
-Content: # VAE architecture
-
-> Encoder-decoder architecture with variational inference and amortized posterior approximation.
-
-In a previous section we have seen that VAE helps us define the latent space. The 'right'  latent space is the one that makes the distribution $p(\mathbf z| \mathbf \theta)$ the most likely to produce $\mathbf x$. We are therefore introducing a stage that complements the aforementioned *generative model or decoder* given by $p(\mathbf x| \mathbf z ; \mathbf \theta) p(\mathbf z | \theta)$.
-
-This stage is called the *recognition model or encoder* and is given by $p(\mathbf z| \mathbf x ; \mathbf \theta)$. The premise is this: the posterior $p(\mathbf z | \mathbf x ; \mathbf \theta)$ will result into a much more meaningful and compact latent space $\mathbf z$ than the prior $p(\mathbf z | \mathbf \theta)$. This encoding though, calls for sampling from a posterior that is itself intractable. We then need to use an approximation to such distribution: $q(\mathbf z| \mathbf x ...
-
-[mml-book.pdf]
-URL: https://mml-book.github.io/book/mml-book.pdf
-Span: page_151
-Content: MATHEMATICS  FOR 
-MACHINE LEAR NING
-Marc Peter Deisenroth
-A. Aldo Faisal
-Cheng Soon On g
-MATHEMATICS FOR MACHINE LEARNING DEISENROTH ET AL.
-The fundamental mathematical tools needed to understand machine 
-learning include linear algebra, analytic geometry, matrix decompositions, vector calculus, optimization, probability and statistics. These topics are traditionally taught in disparate courses, making it hard for data science or computer science students, or professionals, to efﬁ  ciently learn the mathematics. This self-contained textbook bridges the gap between mathematical and machine learning texts, introducing the mathematical concepts with a minimum of prerequisites. It uses these concepts to derive four central machine learning methods: linear regression, principal component analysis, Gaussian mixture models and support vector machines. For students and others with a mathematical background, these derivations provide a starting point to machine learning texts. For those learnin...
-
-[Prerequisites]
-URL: https://aegean.ai/book/prerequisites
-Span: page_121
-Content: # Prerequisites
-
-> Mathematical foundations and programming skills.
-
-This section covers supplementary material including mathematical foundations and programming resources.
-
-## Math Background
-Mathematics for Machine Learning textbook reference.
-Probability basics including joint, marginal, and conditional distributions.
-Linear algebra fundamentals including vectors, matrices, and eigenvalues.
-Calculus fundamentals including derivatives and matrix calculus.
-## Programming
-Python programming resources for data science and ML.
-***...
-
-[Optimization and the ELBO]
-URL: https://aegean.ai/aiml-common/lectures/vae/elbo-optimization
-Span: page_134
-Content: # Optimization and the ELBO
-
-> Derivation of the Evidence Lower Bound from the KL divergence between the inference model and the true posterior, and why maximizing the ELBO jointly trains the encoder and decoder.
-
-The [VAE architecture](/aiml-common/lectures/vae/vae-architecture/index) introduces an inference network $q(\mathbf z | \mathbf x ; \mathbf \phi)$ that approximates the intractable true posterior $p(\mathbf z | \mathbf x ; \mathbf \theta)$. Training jointly the encoder parameters $\mathbf \phi$ and the decoder parameters $\mathbf \theta$ requires an objective that is tractable yet aligned with maximizing the marginal log-likelihood $\log p(\mathbf x ; \mathbf \theta)$. The Evidence Lower Bound (ELBO) is exactly that objective.
-
-## From KL divergence to the ELBO
-
-During the treatment of entropy, we have met the concept of relative entropy or KL divergence that measures the "distance" between two distributions referenced on one of them.
-
-$KL(q \,\|\, p) \;=\; \mathbb{E}_q\!\lef...
 
 [2003.06404.pdf]
 URL: https://arxiv.org/pdf/2003.06404.pdf
@@ -436,22 +545,6 @@ conclude the review with an architecture that combines the
 most promising elements of the end-to-end autonomous driving
 systems.
 Index Terms —Autonomous driving en...
-
-[Denoising Diffusion Probabilistic Models]
-URL: https://aegean.ai/aiml-common/lectures/diffusion/ddpm
-Span: page_141
-Content: # Denoising Diffusion Probabilistic Models
-
-> Forward and reverse processes, three-step worked example, and the VAE-ELBO derivation of the DDPM training loss.
-
-## Diffusion models at a glance
-
-A denoising diffusion model is built from two coupled Markov chains running in opposite directions over the same set of intermediate states $x_0, x_1, \ldots, x_T$:
-
-* **Forward diffusion process** (fixed). Gradually corrupts a clean data point $x_0$ into pure Gaussian noise $x_T$ by adding a small amount of Gaussian noise at each step. No learned parameters; specified entirely by a noise schedule $\beta_t$. Read it as a stack of **fixed VAE encoders**.
-* **Reverse denoising process** (learnable). Starts from pure noise $x_T \sim \mathcal{N}(\mathbf{0}, \mathbf{I})$ and gradually denoises down to $x_0$. Read it as a stack of **learnable VAE decoders** — but with a single neural network shared across all $T$ timesteps and conditioned on $t$.
-
-Pictorially, both chains run over the same intermediate...
 
 [1906.02691.pdf]
 URL: https://arxiv.org/pdf/1906.02691.pdf
@@ -479,6 +572,114 @@ Contents
 1.3 Probabilistic Models and Variational Inference . . . . . . . 6
 1.4ParameterizingConditionalDistributionswithNeuralNetworks 8
 1.5 Directed Graph...
+
+[Math for Machine Learning]
+URL: https://aegean.ai/aiml-common/lectures/ml-math
+Span: page_126
+Content: # Math for Machine Learning
+
+> Mathematical foundations for machine learning including probability, linear algebra, and calculus.
+
+We will go through the key points during the lectures but overall you will benefit from reading the intersecting chapters of [Mathematics for Machine Learning book](https://mml-book.github.io/book/mml-book.pdf).
+***...
+
+[VAE architecture]
+URL: https://aegean.ai/aiml-common/lectures/vae/vae-architecture
+Span: page_133
+Content: # VAE architecture
+
+> Encoder-decoder architecture with variational inference and amortized posterior approximation.
+
+In a previous section we have seen that VAE helps us define the latent space. The 'right'  latent space is the one that makes the distribution $p(\mathbf z| \mathbf \theta)$ the most likely to produce $\mathbf x$. We are therefore introducing a stage that complements the aforementioned *generative model or decoder* given by $p(\mathbf x| \mathbf z ; \mathbf \theta) p(\mathbf z | \theta)$.
+
+This stage is called the *recognition model or encoder* and is given by $p(\mathbf z| \mathbf x ; \mathbf \theta)$. The premise is this: the posterior $p(\mathbf z | \mathbf x ; \mathbf \theta)$ will result into a much more meaningful and compact latent space $\mathbf z$ than the prior $p(\mathbf z | \mathbf \theta)$. This encoding though, calls for sampling from a posterior that is itself intractable. We then need to use an approximation to such distribution: $q(\mathbf z| \mathbf x ...
+
+[Prerequisites]
+URL: https://aegean.ai/book/prerequisites
+Span: page_121
+Content: # Prerequisites
+
+> Mathematical foundations and programming skills.
+
+This section covers supplementary material including mathematical foundations and programming resources.
+
+## Math Background
+Mathematics for Machine Learning textbook reference.
+Probability basics including joint, marginal, and conditional distributions.
+Linear algebra fundamentals including vectors, matrices, and eigenvalues.
+Calculus fundamentals including derivatives and matrix calculus.
+## Programming
+Python programming resources for data science and ML.
+***...
+
+[lec24.diffusion.pdf]
+URL: https://deeplearning.cs.cmu.edu/F24/document/slides/lec24.diffusion.pdf
+Span: page_157
+Content: Deep Learning
+Diffusion
+Hao Chen
+Fall 2024
+Attendance: @
+1
+Generative vs. Discriminative
+•Generative models learn the data distribution
+2
+
+Generative Models
+•Learning to generate data
+3
+ https://cvpr2022 -tutorial -diffusion -models.github.io/ 
+Generative Models
+4
+https:// lilianweng.github.io /posts/2021 -07-11-diffusion -models/
+Generative Models
+5
+https:// lilianweng.github.io /posts/2021 -07-11-diffusion -models/Last Lecture
+Generative Models
+6
+https:// lilianweng.github.io /posts/2021 -07-11-diffusion -models/This Lecture
+A Fast Evolving Field
+7
+SORA 2024
+Content
+•Denoising Diffusion Model Basics
+•Diffusion Models from Stochastic Differential 
+Equations and Score Matching Perspective
+•Denoising Diffusion Implicit Model (DDIM)
+•Conditional Diffusion Models
+•Applications of Diffusion Models
+8
+Content
+•Diffusion Model Basics
+–Diffusion Models as Stacking VAEs
+–Diffusion Models: Forward, Reverse, Training, Sampling
+•Diffusion Models from Stochastic Differential 
+Equations and Score Ma...
+
+[Optimization and the ELBO]
+URL: https://aegean.ai/aiml-common/lectures/vae/elbo-optimization
+Span: page_134
+Content: # Optimization and the ELBO
+
+> Derivation of the Evidence Lower Bound from the KL divergence between the inference model and the true posterior, and why maximizing the ELBO jointly trains the encoder and decoder.
+
+The [VAE architecture](/aiml-common/lectures/vae/vae-architecture/index) introduces an inference network $q(\mathbf z | \mathbf x ; \mathbf \phi)$ that approximates the intractable true posterior $p(\mathbf z | \mathbf x ; \mathbf \theta)$. Training jointly the encoder parameters $\mathbf \phi$ and the decoder parameters $\mathbf \theta$ requires an objective that is tractable yet aligned with maximizing the marginal log-likelihood $\log p(\mathbf x ; \mathbf \theta)$. The Evidence Lower Bound (ELBO) is exactly that objective.
+
+## From KL divergence to the ELBO
+
+During the treatment of entropy, we have met the concept of relative entropy or KL divergence that measures the "distance" between two distributions referenced on one of them.
+
+$KL(q \,\|\, p) \;=\; \mathbb{E}_q\!\lef...
+
+[eiGC3e78JVw]
+URL: https://youtu.be/eiGC3e78JVw
+Timecode: 00:06
+Content: now we now introduce the core algorith for this uh section this lecture which is uh the base filter and I'm going to write the algorith in a form of a kind of a python function um the uh algorith is um going is um this the base let's say underscore filter it has uh three arguments the first argument is the belief of where we are we in the previous time instance St minus one and this is EV you know evidently the posterior uh belief or posterior probability of what we are in the previous state um so what what was our previous state was and then the other one argument is this action that we take at this point in time T and the measurement ZT okay so these are the three arguments and uh there is a kind of a for Loop uh we expect to see a for Loop because as we said the discussion the the algorith is um going to be recursive so for all STS for all the states STS uh first we are estimating the belief hatut of that state uh because we are going to uh execute an action and uh for that action t...
+
+[V3FoNyppPl8]
+URL: https://youtu.be/V3FoNyppPl8
+Timecode: 00:00
+Content: in an earlier video we show how stochastic gr descent is able to optimize H the parameters and Hyper parameters of U our learning problem we started with a sinusoidal simple data set and we introduced during that kind of discussion the mean square error which was our loss function uh as it turns out mean square error is uh was introduced in a kind of a hand wavy F uh fashion the um you know some kind of geometric between our predictions and ground truth labels why uh but uh there is quite a little bit of background behind it so in this kind of section what we will do is we will introduce uh a foundational Concept in information theory that was pioneered by CL Shannon in B Laboratories several decades ago and see ultimately that mean Square can be derived out of this um Theory and how this all linked to not only uh uh not only loss functions of regression but also the loss functions in classification I want to introduce the concept of entropy by asking you a question uh imagine that you...
 
 STUDENT QUESTION:
 Can you explain the variational lower bound and how it relates to Jensen's inequality?
